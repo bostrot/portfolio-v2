@@ -385,6 +385,37 @@ main { max-width: 1060px; margin: 0 auto; padding: 0 1.5rem; }
 
 .more-link { margin-top: 2rem; text-align: center; }
 
+.feat-meta {
+  color: var(--accent);
+  font-size: 0.75rem;
+  margin-top: 0.6rem;
+  opacity: 0.9;
+}
+
+/* ---------- writing ---------- */
+
+.post-list { display: grid; gap: 0.7rem; }
+
+.post-card {
+  display: flex; align-items: baseline; gap: 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.4rem;
+  color: var(--text);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.post-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+.post-date { color: var(--text-dim); white-space: nowrap; }
+.post-title { font-weight: 500; }
+
+.aside-foot {
+  color: var(--text-dim);
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
 /* ---------- education / contact ---------- */
 
 .edu-card, .contact-card {

@@ -20,6 +20,12 @@ const github = JSON.parse(
 const featured = JSON.parse(
   await readFile(path.join(ROOT, 'data', 'featured.json'), 'utf8')
 );
+const extras = JSON.parse(
+  await readFile(path.join(ROOT, 'data', 'extras.json'), 'utf8')
+);
+const experience = JSON.parse(
+  await readFile(path.join(ROOT, 'data', 'experience.json'), 'utf8')
+);
 
 // GitHub's linguist colors for the languages that actually appear in the data.
 const LANG_COLORS = {
@@ -87,10 +93,21 @@ const featuredHtml = featured.projects
         </div>
         ${langDot(live.language)}`
       : '';
+    const rel = github.releases?.[p.repo];
+    const metaBits = [];
+    if (rel?.downloads) metaBits.push(`${fmt(rel.downloads)} downloads`);
+    if (rel?.count) metaBits.push(`${rel.count} releases`);
+    if (rel?.latestTag) metaBits.push(`latest ${rel.latestTag} (${rel.latestAt})`);
+    const pulls = extras.docker?.repos?.[p.repo];
+    if (pulls) metaBits.push(`${fmt(pulls)} Docker pulls`);
+    const metaLine = metaBits.length
+      ? `<p class="feat-meta mono">${metaBits.join(' · ')}</p>`
+      : '';
     return `<article class="feat-card reveal">
       <div>
         <h3><a href="${esc(live?.url ?? `https://github.com/bostrot/${p.repo}`)}" target="_blank" rel="noopener">${esc(p.title)}</a></h3>
         <p class="feat-blurb">${esc(p.blurb)}</p>
+        ${metaLine}
         <div class="tags mono">${tags}</div>
         <div class="feat-links mono">${links}</div>
       </div>
@@ -122,11 +139,70 @@ const reposHtml = gridRepos
   )
   .join('\n');
 
+/* ---------- combined download counter ---------- */
+
+const totalDownloads =
+  (github.totals.releaseDownloads ?? 0) + (extras.docker?.totalPulls ?? 0);
+const totalDownloadsK = `${Math.floor(totalDownloads / 1000)}k`;
+
+/* ---------- experience (shared by index + CV) ---------- */
+
+const subContent = (s) =>
+  s
+    .replaceAll('{{TOTAL_STARS}}', fmt(Number(`${Math.floor(github.totals.stars / 100) * 100}`)))
+    .replaceAll('{{WSL_DOWNLOADS}}', fmt(Math.floor((github.releases?.['wsl2-distro-manager']?.downloads ?? 0) / 1000) * 1000));
+
+const experienceHtml = experience.entries
+  .map(
+    (e) => `        <article class="tl-item reveal">
+          <div class="tl-meta mono">${esc(e.period)}</div>
+          <div class="tl-card">
+            <h3>${esc(e.title).replaceAll('&amp;amp;', '&amp;')}</h3>
+            <p class="tl-org">${esc(e.org)}</p>
+            <ul>
+${e.bullets.map((b) => `              <li>${esc(subContent(b))}</li>`).join('\n')}
+            </ul>
+            <div class="tags mono">
+              ${e.tags.map((t) => `<span>${esc(t)}</span>`).join('')}
+            </div>
+          </div>
+        </article>`
+  )
+  .join('\n\n');
+
+const cvExperienceHtml = experience.entries
+  .map(
+    (e) => `  <div class="job">
+    <div class="job-head"><h3>${esc(e.title)}</h3><span class="period">${esc(e.period)}</span></div>
+    <p class="job-org">${esc(e.org)}</p>
+    <ul>
+${e.bullets.map((b) => `      <li>${esc(subContent(b))}</li>`).join('\n')}
+    </ul>
+    <p class="tags">${e.tags.map(esc).join(' · ')}</p>
+  </div>`
+  )
+  .join('\n');
+
+/* ---------- writing section ---------- */
+
+const writingHtml = (extras.blog?.posts ?? [])
+  .map(
+    (p) => `        <a class="post-card reveal" href="${esc(p.url)}" target="_blank" rel="noopener">
+          <span class="post-date mono">${esc(p.date ?? '')}</span>
+          <span class="post-title">${esc(p.title)}</span>
+        </a>`
+  )
+  .join('\n');
+
+const soLine = extras.stackoverflow
+  ? `${fmt(extras.stackoverflow.reputation)} Stack Overflow rep · ${extras.stackoverflow.badges.gold}× gold`
+  : '';
+
 /* ---------- stats ---------- */
 
 const statsHtml = `
   <div class="stat"><b>${fmt(github.totals.stars)}</b><span>Stars</span></div>
-  <div class="stat"><b>${fmt(github.totals.repos)}</b><span>Repos</span></div>
+  <div class="stat"><b>${totalDownloadsK}</b><span>Downloads</span></div>
   <div class="stat"><b>${fmt(github.profile.followers)}</b><span>Followers</span></div>`;
 
 /* ---------- SEO: JSON-LD structured data ---------- */
@@ -222,6 +298,10 @@ html = html
   .replaceAll('{{AVATAR_URL}}', esc(github.profile.avatarUrl))
   .replaceAll('{{TOTAL_STARS}}', fmt(Number(totalStarsRounded)))
   .replaceAll('{{JSONLD}}', jsonldTag)
+  .replaceAll('{{EXPERIENCE}}', experienceHtml)
+  .replaceAll('{{WRITING}}', writingHtml)
+  .replaceAll('{{SO_LINE}}', soLine)
+  .replaceAll('{{TOTAL_DOWNLOADS}}', fmt(Math.floor(totalDownloads / 1000) * 1000))
   .replaceAll('{{UPDATED}}', updated)
   .replaceAll('{{YEARS_CODING}}', String(yearsCoding))
   .replaceAll('{{FIRST_REPO_YEAR}}', String(firstRepoYear))
@@ -235,6 +315,19 @@ if (html.includes('{{')) {
 await mkdir(DIST, { recursive: true });
 await cp(path.join(ROOT, 'static'), DIST, { recursive: true });
 await writeFile(path.join(DIST, 'index.html'), html);
+
+// CV page — printed to cv.pdf by the deploy workflow via headless Chrome.
+let cvHtml = await readFile(path.join(ROOT, 'templates', 'cv.html'), 'utf8');
+cvHtml = cvHtml
+  .replaceAll('{{CV_EXPERIENCE}}', cvExperienceHtml)
+  .replaceAll('{{TOTAL_DOWNLOADS}}', fmt(Math.floor(totalDownloads / 1000) * 1000))
+  .replaceAll('{{TOTAL_STARS}}', fmt(Number(totalStarsRounded)))
+  .replaceAll('{{YEARS_CODING}}', String(yearsCoding))
+  .replaceAll('{{UPDATED}}', updated);
+if (cvHtml.includes('{{')) {
+  throw new Error(`Unreplaced CV placeholders: ${cvHtml.match(/\{\{[A-Z_]+\}\}/g)?.join(', ')}`);
+}
+await writeFile(path.join(DIST, 'cv.html'), cvHtml);
 
 // Secondary pages (imprint, privacy) share the site shell.
 const pageShell = await readFile(path.join(ROOT, 'templates', 'page.html'), 'utf8');
@@ -323,9 +416,14 @@ let bostrotHtml = await readFile(
   path.join(ROOT, 'templates', 'bostrot.html'),
   'utf8'
 );
+const bostrotStatsHtml = `
+  <div class="stat"><b>${totalDownloadsK}</b><span>Downloads</span></div>
+  <div class="stat"><b>${fmt(github.totals.stars)}</b><span>Stars</span></div>
+  <div class="stat"><b>${fmt(Math.floor((extras.docker?.totalPulls ?? 0) / 1000))}k</b><span>Docker pulls</span></div>`;
 bostrotHtml = bostrotHtml
   .replaceAll('{{JSONLD}}', `<script type="application/ld+json">${JSON.stringify(bostrotJsonld)}</script>`)
-  .replaceAll('{{STATS}}', statsHtml)
+  .replaceAll('{{STATS}}', bostrotStatsHtml)
+  .replaceAll('{{TOTAL_DOWNLOADS}}', fmt(Math.floor(totalDownloads / 1000) * 1000))
   .replaceAll('{{FEATURED}}', featuredHtml)
   .replaceAll('{{TOTAL_STARS}}', fmt(Number(totalStarsRounded)))
   .replaceAll('{{UPDATED}}', updated)

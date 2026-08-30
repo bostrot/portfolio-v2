@@ -1,0 +1,75 @@
+{
+  "fetchedAt": "2026-08-30T13:03:59.716Z",
+  "docker": {
+    "totalPulls": 41165,
+    "repos": {
+      "gitlab-runner": 23343,
+      "ghost-buster": 557,
+      "ghost-static-site-generator": 3195,
+      "plausible": 644,
+      "who-crawler-dependencies": 303,
+      "telegram-support-bot": 5582,
+      "openvpn-client": 578,
+      "openconnect-client": 534,
+      "telegram-send-crawler": 512,
+      "flutter": 230,
+      "ncftp": 462,
+      "frigate-wheels": 83,
+      "caddy": 168,
+      "protonmail-bridge": 1813,
+      "bridge-manager": 1467,
+      "paperless-mcp": 422,
+      "mautrix-mattermost": 862,
+      "maestro": 226,
+      "paseo": 184
+    }
+  },
+  "stackoverflow": {
+    "reputation": 6101,
+    "badges": {
+      "bronze": 49,
+      "silver": 41,
+      "gold": 3
+    }
+  },
+  "pubdev": {
+    "packages": {
+      "plausible_analytics": {
+        "likes": 17,
+        "downloads30d": 1809
+      },
+      "chunked_downloader": {
+        "likes": 7,
+        "downloads30d": 235
+      },
+      "flutter_android_pip": {
+        "likes": 17,
+        "downloads30d": 45
+      }
+    }
+  },
+  "blog": {
+    "posts": [
+      {
+        "title": "Installing Atlas OS on Windows 11: A Guide for Proxmox VMs",
+        "url": "https://senpai.club/atlas-os-on-windows/",
+        "date": "2026-05-03"
+      },
+      {
+        "title": "ESP8266 D1 Mini Clone + LD2450 with ESPHome: Presence Detection",
+        "url": "https://senpai.club/esp8266-d1-mini-ld2450-esphome-presence/",
+        "date": "2026-04-20"
+      },
+      {
+        "title": "VS Code Remote SSH, Fish, and 1Password on Mac (Step by Step)",
+        "url": "https://senpai.club/fish-shell-vscode-remote-ssh/",
+        "date": "2026-04-14"
+      },
+      {
+        "title": "Running LLMs Inside a Proxmox LXC with GPU Passthrough on UM 780 XTX",
+        "url": "https://senpai.club/proxmox-gpu-container-passthrough/",
+        "date": "2025-03-16"
+      }
+    ]
+  }
+}

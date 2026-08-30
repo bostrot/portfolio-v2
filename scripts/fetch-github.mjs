@@ -47,6 +47,24 @@ async function fetchAllRepos() {
 const profile = await gh(`https://api.github.com/users/${USER}`);
 const allRepos = await fetchAllRepos();
 
+// Release stats for the featured projects: total asset downloads + latest tag.
+const FEATURED = ['wsl2-distro-manager', 'telegram-support-bot', 'PowerToysRunPluginWinget'];
+const releases = {};
+for (const repo of FEATURED) {
+  const rels = await gh(
+    `https://api.github.com/repos/${USER}/${repo}/releases?per_page=100`
+  );
+  releases[repo] = {
+    count: rels.length,
+    downloads: rels.reduce(
+      (s, r) => s + r.assets.reduce((a, x) => a + x.download_count, 0),
+      0
+    ),
+    latestTag: rels[0]?.tag_name ?? null,
+    latestAt: rels[0]?.published_at?.slice(0, 10) ?? null,
+  };
+}
+
 const ownRepos = allRepos.filter((r) => !r.fork);
 const visibleRepos = ownRepos.filter((r) => !r.archived);
 
@@ -83,7 +101,9 @@ const data = {
     firstRepoCreatedAt: ownRepos
       .map((r) => r.created_at)
       .sort()[0],
+    releaseDownloads: Object.values(releases).reduce((s, r) => s + r.downloads, 0),
   },
+  releases,
   repos,
 };
 

@@ -1,0 +1,70 @@
+{
+  "comment": "Single source of truth for the experience timeline — rendered into both index.html and cv.html by scripts/build.mjs.",
+  "entries": [
+    {
+      "title": "Senior Software Engineer & IT Consultant",
+      "org": "NEOZO · Cologne",
+      "period": "Jan 2025 — today",
+      "bullets": [
+        "Technical lead and main point of contact for a long-running project at an international logistics provider, covering carrier applications and integration with the client's transport management landscape.",
+        "Own the architecture decisions within my project scope, from integration concepts through data processing logic to error handling.",
+        "Designed and built a status application that consolidates shipment data from heterogeneous carrier sources and manually entered TMS records into reliable status information from a freight forwarder's perspective — including data cleanup and matching logic for cases where carriers provide no unambiguous identifier (air and ocean).",
+        "Designed the ingestion path around Kafka as a buffering and throttling layer for high-volume inbound data.",
+        "Integrated a legacy transport management system via EDI, including development on the PL/SQL side.",
+        "Replaced fragmented document handling with a central document service backed by S3 — over 80,000 documents processed in the first two weeks.",
+        "Delivered applications spanning bookings, sailing schedules and status processing, working closely with product management, QA and business stakeholders.",
+        "Maintain and extend shared libraries used across projects, including integration of a new permission model."
+      ],
+      "tags": ["Java", "Kotlin", "Spring Boot", "Kafka", "PL/SQL", "EDI", "S3", "Freemarker"]
+    },
+    {
+      "title": "Software Engineer & IT Consultant",
+      "org": "NEOZO · Cologne",
+      "period": "Jul 2023 — Jan 2025",
+      "bullets": [
+        "Tech Lead (late 2023 – April 2024): technical lead for a team of six developers, responsible for architecture decisions and code quality.",
+        "Designed the database schema and internal data structures underlying the carrier applications.",
+        "Built the ingestion process for provider data — retrieving files from SFTP endpoints, transforming them into the internal data model, and notifying the target system across five globally distributed instances.",
+        "Delivered custom software for an international logistics provider from concept through to deployment, connecting modern services to established legacy platforms."
+      ],
+      "tags": ["Java", "Kotlin", "Spring Boot", "SQL"]
+    },
+    {
+      "title": "Founder & Application Developer",
+      "org": "Bostrot · self-employed",
+      "period": "Jan 2021 — today",
+      "bullets": [
+        "Founder of Bostrot, developing and commercially distributing developer tools with a combined {{TOTAL_STARS}}+ GitHub stars and an active user community.",
+        "WSL Manager — a Flutter/Dart GUI for managing WSL2 environments with {{WSL_DOWNLOADS}}+ downloads, shipped through the Microsoft Store, Winget, Scoop and Chocolatey, localized into 9 languages, with a built-in MCP server for AI agents such as Claude Desktop.",
+        "Telegram & Signal Support Bot — a TypeScript ticketing system with Docker deployment, also operated as a hosted commercial service.",
+        "PowerToys Run Winget Plugin — a C# plugin for Microsoft PowerToys enabling package search and installation.",
+        "Published reusable open-source packages on pub.dev, including a Plausible Analytics client and a chunked downloader for Dart/Flutter.",
+        "Own the full product lifecycle across all projects: architecture, implementation, release management, distribution, community support and monetization."
+      ],
+      "tags": ["Dart", "TypeScript", "C#", "Docker", "CI/CD", "GitHub Actions", "Open Source"]
+    },
+    {
+      "title": "Student Software Engineer & IT Tutor",
+      "org": "FH Aachen · part-time",
+      "period": "Jul 2021 — Jun 2023",
+      "bullets": [
+        "Engineered and maintained backend infrastructure for production teaching systems used across lab courses, improving the architecture and code quality of a Jenkins-based CI submission system and the MoniTutor feedback platform.",
+        "Built a cross-platform CI/CD pipeline (Windows, Linux, macOS on x86 and ARM) delivering a portable, preconfigured VS Code C++ toolchain, plus a custom VS Code extension that simplified lab assignment workflows for first-year students.",
+        "Bachelor thesis (grade 1.0): architecture modernization of MoniTutor — migrated the core client from Python to Rust, substantially improving runtime performance, memory footprint and stability. Deployed to production lab courses immediately after completion.",
+        "Mentored first-year students in C++ and core computer science concepts as a programming tutor."
+      ],
+      "tags": ["Rust", "CI/CD", "C++", "Python", "Jenkins"]
+    },
+    {
+      "title": "Teaching Assistant — C++",
+      "org": "FH Aachen · part-time, on site",
+      "period": "Oct 2020 — Mar 2021",
+      "bullets": [
+        "Mentored first-semester computer science students in foundational programming concepts and C++.",
+        "Ran the departmental Q&A tutorial, answering technical questions from computer science students as well as students from other engineering programs.",
+        "Reviewed student code and guided hands-on debugging sessions."
+      ],
+      "tags": ["C++", "Teaching"]
+    }
+  ]
+}

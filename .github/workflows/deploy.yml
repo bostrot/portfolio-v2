@@ -31,6 +31,11 @@ jobs:
           node-version: 22
       - name: Build site
         run: node scripts/build.mjs
+      - name: Render CV PDF
+        run: |
+          google-chrome --headless=new --no-sandbox --disable-gpu \
+            --no-pdf-header-footer --print-to-pdf=dist/cv.pdf \
+            "file://$PWD/dist/cv.html"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4173", "--directory", "dist"],
       "port": 4173
+    },
+    {
+      "name": "bostrot",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4174", "--directory", "dist-bostrot"],
+      "port": 4174
     }
   ]
 }

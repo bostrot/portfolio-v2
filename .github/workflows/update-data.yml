@@ -23,12 +23,14 @@ jobs:
         run: node scripts/fetch-github.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch extra stats (Docker Hub, Stack Overflow, pub.dev, blog)
+        run: node scripts/fetch-extras.mjs
       - name: Commit refreshed data
         id: commit
         run: |
           git config user.name "Eric Trenkel"
           git config user.email "7342321+bostrot@users.noreply.github.com"
-          git add data/github.json
+          git add data/github.json data/extras.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No data changes."

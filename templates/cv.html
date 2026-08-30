@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>Eric Trenkel — CV</title>
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @page { size: A4; margin: 14mm 16mm; }
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 9.3pt; line-height: 1.45; color: #1c2230;
+      max-width: 178mm; margin: 0 auto; padding: 8mm 0;
+    }
+    a { color: #0b7f6e; text-decoration: none; }
+    .accent { color: #0b7f6e; }
+    .mono { font-family: "JetBrains Mono", monospace; font-size: 7.6pt; }
+
+    header { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #1c2230; padding-bottom: 4mm; margin-bottom: 5mm; }
+    h1 { font-family: "Space Grotesk", sans-serif; font-size: 21pt; font-weight: 700; letter-spacing: -0.02em; }
+    .role { font-family: "Space Grotesk", sans-serif; font-size: 10.5pt; font-weight: 600; margin-top: 1mm; }
+    .contact { text-align: right; font-size: 8.4pt; color: #4a5368; line-height: 1.6; }
+
+    .summary { color: #3a4358; margin-bottom: 5mm; }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif; font-size: 10.5pt; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      border-bottom: 1px solid #d8dce6; padding-bottom: 1mm; margin: 5mm 0 3mm;
+    }
+    .job { margin-bottom: 4mm; break-inside: avoid-page; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+    .job-head h3 { font-size: 10pt; font-weight: 650; }
+    .job-org { color: #0b7f6e; font-weight: 500; font-size: 8.8pt; margin: 0.5mm 0 1.5mm; }
+    .period { color: #6b7386; font-size: 8.2pt; white-space: nowrap; }
+    ul { list-style: none; }
+    li { padding-left: 3.5mm; position: relative; margin-bottom: 0.8mm; color: #3a4358; }
+    li::before { content: "▪"; position: absolute; left: 0; color: #0b7f6e; font-size: 7pt; top: 1pt; }
+    .tags { color: #6b7386; font-size: 7.6pt; margin-top: 1.2mm; }
+
+    .stats-line { display: flex; gap: 6mm; margin-bottom: 5mm; }
+    .stat b { font-family: "Space Grotesk", sans-serif; font-size: 12pt; color: #0b7f6e; display: block; }
+    .stat span { font-size: 7.4pt; color: #6b7386; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+    .edu p, .skills p { color: #3a4358; }
+    .skills p { line-height: 1.7; }
+
+    footer { margin-top: 6mm; padding-top: 2mm; border-top: 1px solid #d8dce6; font-size: 7.2pt; color: #8a92a5; display: flex; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Eric Trenkel</h1>
+      <p class="role">Senior Software Engineer &amp; IT Consultant</p>
+    </div>
+    <div class="contact">
+      Cologne, Germany<br />
+      <a href="mailto:eric@bostrot.com">eric@bostrot.com</a><br />
+      <a href="https://erictrenkel.com">erictrenkel.com</a> · <a href="https://github.com/bostrot">github.com/bostrot</a><br />
+      <a href="https://linkedin.com/in/erictrenkel">linkedin.com/in/erictrenkel</a>
+    </div>
+  </header>
+
+  <p class="summary">
+    Software architecture, system integration &amp; technical leadership. {{YEARS_CODING}}+ years
+    building software, 5+ professionally — tech lead for a team of six in logistics integration,
+    and founder of Bostrot, whose open-source developer tools have been downloaded
+    {{TOTAL_DOWNLOADS}}+ times.
+  </p>
+
+  <div class="stats-line">
+    <div class="stat"><b>{{TOTAL_DOWNLOADS}}+</b><span>Downloads</span></div>
+    <div class="stat"><b>{{TOTAL_STARS}}+</b><span>GitHub stars</span></div>
+    <div class="stat"><b>62+</b><span>Releases shipped</span></div>
+    <div class="stat"><b>6</b><span>Devs led as Tech Lead</span></div>
+  </div>
+
+  <h2>Experience</h2>
+  {{CV_EXPERIENCE}}
+
+  <div class="two-col">
+    <div class="edu">
+      <h2>Education</h2>
+      <p>
+        <strong>B.Sc. Computer Engineering</strong><br />
+        FH Aachen University of Applied Sciences<br />
+        Bachelor thesis (grade 1.0): architecture modernization of MoniTutor —
+        Python-to-Rust client migration, deployed to production lab courses.
+      </p>
+    </div>
+    <div class="skills">
+      <h2>Core Skills</h2>
+      <p>
+        Java · Kotlin · Spring Boot · Apache Kafka · PL/SQL · EDI · Amazon S3 ·
+        Microservices · Dart / Flutter · TypeScript · Rust · C# · Docker ·
+        CI/CD · GitHub Actions · Software Architecture · System Integration
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <span>Generated automatically from live data by the erictrenkel.com build pipeline.</span>
+    <span>{{UPDATED}}</span>
+  </footer>
+</body>
+</html>
