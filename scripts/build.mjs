@@ -237,7 +237,7 @@ const jsonld = {
       description:
         'Senior Software Engineer & IT Consultant focused on software architecture, system integration and technical leadership. Open source maintainer.',
       url: SITE_URL,
-      image: github.profile.avatarUrl,
+      image: `${SITE_URL}img/eric.jpg`,
       email: 'mailto:eric@bostrot.com',
       address: {
         '@type': 'PostalAddress',
