@@ -1,0 +1,29 @@
+{
+  "comment": "Curated blurbs for the featured project cards. Live numbers (stars, forks, language) are merged in from data/github.json at build time by scripts/build.mjs.",
+  "projects": [
+    {
+      "repo": "wsl2-distro-manager",
+      "title": "WSL Manager",
+      "blurb": "A Flutter/Dart GUI for managing WSL2 environments. 62+ releases shipped through the Microsoft Store, Winget, Scoop and Chocolatey, backed by a GitHub Actions CI/CD pipeline and localized into 9 languages. Includes a built-in MCP server exposing WSL environments to AI agents such as Claude Desktop, remote management over SSH, and running Docker images as WSL instances without a Docker installation.",
+      "tags": ["Flutter", "Dart", "MCP", "CI/CD", "Microsoft Store"],
+      "links": [
+        { "label": "wslmanager.com", "url": "https://wslmanager.com" },
+        { "label": "Microsoft Store", "url": "https://apps.microsoft.com/detail/9NCRQ2QTNZ6C" }
+      ]
+    },
+    {
+      "repo": "telegram-support-bot",
+      "title": "Telegram & Signal Support Bot",
+      "blurb": "A TypeScript ticketing system with Docker deployment, Jest test coverage and SonarQube analysis, including optional LLM-based auto-responses. Survived several major migrations — including a full bot framework replacement — while preserving backward compatibility for existing deployments. Also operated as a hosted commercial service.",
+      "tags": ["TypeScript", "Docker", "Jest", "SonarQube", "LLM"],
+      "links": []
+    },
+    {
+      "repo": "PowerToysRunPluginWinget",
+      "title": "PowerToys Run Winget Plugin",
+      "blurb": "A C# plugin for Microsoft PowerToys enabling package search and installation straight from the PowerToys Run launcher.",
+      "tags": ["C#", ".NET", "PowerToys", "Winget"],
+      "links": []
+    }
+  ]
+}

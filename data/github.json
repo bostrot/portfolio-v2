@@ -1,0 +1,413 @@
+{
+  "fetchedAt": "2026-08-30T10:43:48.678Z",
+  "profile": {
+    "name": "Eric Trenkel",
+    "login": "bostrot",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/7342321?v=4",
+    "url": "https://github.com/bostrot",
+    "followers": 161,
+    "publicRepos": 56
+  },
+  "totals": {
+    "stars": 5041,
+    "forks": 447,
+    "repos": 37,
+    "firstRepoCreatedAt": "2016-02-03T09:31:29Z"
+  },
+  "repos": [
+    {
+      "name": "wsl2-distro-manager",
+      "description": "A GUI to quickly manage your WSL2 instances",
+      "url": "https://github.com/bostrot/wsl2-distro-manager",
+      "homepage": "https://apps.microsoft.com/store/detail/wsl-manager/9NWS9K95NMJB",
+      "stars": 3966,
+      "forks": 177,
+      "language": "Dart",
+      "topics": [
+        "collaborate",
+        "docker",
+        "flutter",
+        "github",
+        "gui",
+        "rootfs",
+        "turnkey",
+        "windows",
+        "wsl",
+        "wsl2"
+      ],
+      "pushedAt": "2026-08-28T19:39:54Z"
+    },
+    {
+      "name": "telegram-support-bot",
+      "description": "A Telegram ticketing/supporting system.",
+      "url": "https://github.com/bostrot/telegram-support-bot",
+      "homepage": "https://botspace.bostrot.com",
+      "stars": 610,
+      "forks": 202,
+      "language": "TypeScript",
+      "topics": [
+        "bot",
+        "staff-groups",
+        "support-bot",
+        "telegraf-framework",
+        "telegram",
+        "telegram-bot",
+        "telegram-support-bot",
+        "ticket",
+        "ticketing",
+        "ticketing-system"
+      ],
+      "pushedAt": "2025-08-21T22:54:15Z"
+    },
+    {
+      "name": "PowerToysRunPluginWinget",
+      "description": "Winget plugin for PowerToys Run",
+      "url": "https://github.com/bostrot/PowerToysRunPluginWinget",
+      "homepage": null,
+      "stars": 335,
+      "forks": 17,
+      "language": "C#",
+      "topics": [
+        "plugin",
+        "powertoys",
+        "powertoys-run",
+        "powertoys-run-plugin",
+        "winget",
+        "winget-cli",
+        "wingetui"
+      ],
+      "pushedAt": "2026-08-30T01:14:04Z"
+    },
+    {
+      "name": "flutter_android_pip",
+      "description": "Simple Flutter plugin for Android picture in picture mode.",
+      "url": "https://github.com/bostrot/flutter_android_pip",
+      "homepage": null,
+      "stars": 14,
+      "forks": 14,
+      "language": "Dart",
+      "topics": [
+        "flutter",
+        "pip",
+        "plugin"
+      ],
+      "pushedAt": "2020-04-29T22:43:51Z"
+    },
+    {
+      "name": "flutter_plausible_analytics",
+      "description": "Plausible Analytics for Flutter as a Dart package.",
+      "url": "https://github.com/bostrot/flutter_plausible_analytics",
+      "homepage": null,
+      "stars": 12,
+      "forks": 7,
+      "language": "Dart",
+      "topics": [
+        "flutter",
+        "package",
+        "plausible",
+        "plausible-analytics"
+      ],
+      "pushedAt": "2024-02-12T13:26:08Z"
+    },
+    {
+      "name": "flutter_repo_wiki",
+      "description": "A Flutter docs and pub wiki with a notifier for new versions.",
+      "url": "https://github.com/bostrot/flutter_repo_wiki",
+      "homepage": null,
+      "stars": 12,
+      "forks": 0,
+      "language": "Dart",
+      "topics": [
+        "app",
+        "flutter",
+        "list",
+        "packages"
+      ],
+      "pushedAt": "2020-12-30T11:52:01Z"
+    },
+    {
+      "name": "portfolio",
+      "description": "Clean HTML5 & CSS portfolio site",
+      "url": "https://github.com/bostrot/portfolio",
+      "homepage": null,
+      "stars": 11,
+      "forks": 2,
+      "language": "HTML",
+      "topics": [
+        "dark-theme",
+        "portfolio",
+        "template",
+        "website"
+      ],
+      "pushedAt": "2026-08-25T22:01:24Z"
+    },
+    {
+      "name": "cloudflare-stream-uploader",
+      "description": "A NodeJS Cloudflare Stream uploader.",
+      "url": "https://github.com/bostrot/cloudflare-stream-uploader",
+      "homepage": null,
+      "stars": 10,
+      "forks": 1,
+      "language": "JavaScript",
+      "topics": [],
+      "pushedAt": "2019-02-02T00:04:18Z"
+    },
+    {
+      "name": "wsl-scripts",
+      "description": null,
+      "url": "https://github.com/bostrot/wsl-scripts",
+      "homepage": null,
+      "stars": 9,
+      "forks": 11,
+      "language": null,
+      "topics": [],
+      "pushedAt": "2024-07-08T18:39:14Z"
+    },
+    {
+      "name": "steam_keys_activator",
+      "description": "A JS script to activate multiple Steam keys automatically.",
+      "url": "https://github.com/bostrot/steam_keys_activator",
+      "homepage": null,
+      "stars": 6,
+      "forks": 1,
+      "language": "JavaScript",
+      "topics": [
+        "activator",
+        "chrome",
+        "jscript",
+        "key",
+        "multiple",
+        "steam"
+      ],
+      "pushedAt": "2018-08-15T10:44:55Z"
+    },
+    {
+      "name": "chunked_downloader",
+      "description": "Dart downloader with customizable chunk/buffer size",
+      "url": "https://github.com/bostrot/chunked_downloader",
+      "homepage": null,
+      "stars": 5,
+      "forks": 1,
+      "language": "Dart",
+      "topics": [],
+      "pushedAt": "2026-08-24T19:54:16Z"
+    },
+    {
+      "name": "RustyFS",
+      "description": "RustyFS is a minimal multithreading file server written in Rust, inspired by the Rust example. It allows for easy and efficient file sharing between clients and servers through its multi-threaded architecture. With RustyFS, users can transfer files with ease while enjoying the speed and safety provided by the Rust programming language.",
+      "url": "https://github.com/bostrot/RustyFS",
+      "homepage": null,
+      "stars": 3,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "pushedAt": "2023-04-02T23:54:29Z"
+    },
+    {
+      "name": "bostrot",
+      "description": null,
+      "url": "https://github.com/bostrot/bostrot",
+      "homepage": null,
+      "stars": 2,
+      "forks": 1,
+      "language": null,
+      "topics": [],
+      "pushedAt": "2023-04-08T12:59:17Z"
+    },
+    {
+      "name": "erics-container-repo",
+      "description": "My docker containers in one place",
+      "url": "https://github.com/bostrot/erics-container-repo",
+      "homepage": null,
+      "stars": 2,
+      "forks": 0,
+      "language": "Dockerfile",
+      "topics": [],
+      "pushedAt": "2021-11-23T00:16:03Z"
+    },
+    {
+      "name": "flutter_applovin",
+      "description": "A flutter plugin for applovin",
+      "url": "https://github.com/bostrot/flutter_applovin",
+      "homepage": null,
+      "stars": 1,
+      "forks": 1,
+      "language": "Java",
+      "topics": [],
+      "pushedAt": "2018-06-19T16:10:39Z"
+    },
+    {
+      "name": "gitlab-runner",
+      "description": "GitLab runner for ARM (Raspberry Pi 4) and Kubernetes with latest (12.2.0) gitlab-runner package.",
+      "url": "https://github.com/bostrot/gitlab-runner",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "language": "Dockerfile",
+      "topics": [],
+      "pushedAt": "2019-09-12T12:48:36Z"
+    },
+    {
+      "name": "wahlapp",
+      "description": "App for election information gathering about voters and their most important topics using Angular.",
+      "url": "https://github.com/bostrot/wahlapp",
+      "homepage": "https://erictrenkel.com",
+      "stars": 1,
+      "forks": 0,
+      "language": "TypeScript",
+      "topics": [
+        "angular",
+        "election",
+        "information",
+        "voter",
+        "voter-engagement",
+        "voting",
+        "voting-application"
+      ],
+      "pushedAt": "2021-04-05T15:33:51Z"
+    },
+    {
+      "name": "who-crawler",
+      "description": "Mirror of my repo at https://gitlab.com/botty-group/who-crawler.git",
+      "url": "https://github.com/bostrot/who-crawler",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "pushedAt": "2023-03-03T21:49:54Z"
+    },
+    {
+      "name": "bitsdojo_window_flutter3",
+      "description": null,
+      "url": "https://github.com/bostrot/bitsdojo_window_flutter3",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Dart",
+      "topics": [],
+      "pushedAt": "2022-05-18T12:50:35Z"
+    },
+    {
+      "name": "bostrot.pro",
+      "description": null,
+      "url": "https://github.com/bostrot/bostrot.pro",
+      "homepage": "https://bostrot.com/",
+      "stars": 0,
+      "forks": 0,
+      "language": "HTML",
+      "topics": [],
+      "pushedAt": "2019-09-21T23:41:35Z"
+    },
+    {
+      "name": "cf-dns-autoupdater",
+      "description": "Automatic DNS updater for Cloudflare written in NodeJS.",
+      "url": "https://github.com/bostrot/cf-dns-autoupdater",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "pushedAt": "2019-02-02T00:04:50Z"
+    },
+    {
+      "name": "devsecops-threatdragon",
+      "description": null,
+      "url": "https://github.com/bostrot/devsecops-threatdragon",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "pushedAt": "2022-10-28T14:39:44Z"
+    },
+    {
+      "name": "ghost-static-site-generator",
+      "description": null,
+      "url": "https://github.com/bostrot/ghost-static-site-generator",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Dockerfile",
+      "topics": [],
+      "pushedAt": "2020-11-13T21:47:42Z"
+    },
+    {
+      "name": "mautrix-mattermost",
+      "description": null,
+      "url": "https://github.com/bostrot/mautrix-mattermost",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Go",
+      "topics": [],
+      "pushedAt": "2026-03-05T21:35:03Z"
+    },
+    {
+      "name": "packages-repo",
+      "description": "Automatic upgraded packages for some package managers",
+      "url": "https://github.com/bostrot/packages-repo",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "PowerShell",
+      "topics": [],
+      "pushedAt": "2026-01-17T20:04:45Z"
+    },
+    {
+      "name": "pdf_document_scanner",
+      "description": null,
+      "url": "https://github.com/bostrot/pdf_document_scanner",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Dart",
+      "topics": [],
+      "pushedAt": "2026-08-24T19:54:24Z"
+    },
+    {
+      "name": "portfolio-v2",
+      "description": null,
+      "url": "https://github.com/bostrot/portfolio-v2",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "pushedAt": "2026-08-30T10:30:52Z"
+    },
+    {
+      "name": "ResilioBridge",
+      "description": "Serve resilio files outside; share to users without the client",
+      "url": "https://github.com/bostrot/ResilioBridge",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Dockerfile",
+      "topics": [],
+      "pushedAt": "2023-04-02T22:16:49Z"
+    },
+    {
+      "name": "second-ssh",
+      "description": "The only SSH client you will ever need",
+      "url": "https://github.com/bostrot/second-ssh",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Dart",
+      "topics": [],
+      "pushedAt": "2022-03-29T08:58:27Z"
+    },
+    {
+      "name": "senpaiclub",
+      "description": null,
+      "url": "https://github.com/bostrot/senpaiclub",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "topics": [],
+      "pushedAt": "2026-05-16T14:31:12Z"
+    }
+  ]
+}
