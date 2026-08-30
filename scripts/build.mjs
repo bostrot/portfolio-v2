@@ -6,12 +6,13 @@
  * Usage: node scripts/build.mjs
  */
 
-import { readFile, writeFile, mkdir, cp, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, cp, readdir, rm, rename } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = path.join(ROOT, 'dist');
+const DIST_BOSTROT = path.join(ROOT, 'dist-bostrot');
 
 const github = JSON.parse(
   await readFile(path.join(ROOT, 'data', 'github.json'), 'utf8')
@@ -248,26 +249,110 @@ for (const file of await readdir(path.join(ROOT, 'templates', 'pages'))) {
 }
 
 // SEO plumbing: sitemap (index only — legal pages are noindex) and robots.txt.
-await writeFile(
-  path.join(DIST, 'sitemap.xml'),
-  `<?xml version="1.0" encoding="UTF-8"?>
+const writeSeoFiles = async (dist, siteUrl) => {
+  await writeFile(
+    path.join(dist, 'sitemap.xml'),
+    `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>${SITE_URL}</loc>
+    <loc>${siteUrl}</loc>
     <lastmod>${updated}</lastmod>
   </url>
 </urlset>
 `
-);
-await writeFile(
-  path.join(DIST, 'robots.txt'),
-  `User-agent: *
+  );
+  await writeFile(
+    path.join(dist, 'robots.txt'),
+    `User-agent: *
 Allow: /
 
-Sitemap: ${SITE_URL}sitemap.xml
+Sitemap: ${siteUrl}sitemap.xml
 `
+  );
+};
+await writeSeoFiles(DIST, SITE_URL);
+
+/* ================================================================
+   Second site: bostrot.com — the company page. Same styles, fonts,
+   data and legal pages; own template, favicon and structured data.
+   Deployed by the bostrot.com repo's workflow from dist-bostrot/.
+   ================================================================ */
+
+const BOSTROT_URL = 'https://bostrot.com/';
+
+const bostrotJsonld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${BOSTROT_URL}#org`,
+      name: 'Bostrot Inh. Eric Trenkel',
+      alternateName: 'Bostrot',
+      url: BOSTROT_URL,
+      email: 'mailto:eric@bostrot.com',
+      vatID: 'DE353552581',
+      foundingDate: '2021',
+      founder: {
+        '@type': 'Person',
+        name: 'Eric Trenkel',
+        url: SITE_URL,
+      },
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Pulheim',
+        addressCountry: 'DE',
+      },
+      sameAs: ['https://github.com/bostrot', 'https://wslmanager.com'],
+    },
+    ...featured.projects.map((p) => {
+      const live = repoByName.get(p.repo);
+      return {
+        '@type': 'SoftwareApplication',
+        name: p.title,
+        description: p.blurb,
+        url: p.links[0]?.url ?? live?.url ?? `https://github.com/bostrot/${p.repo}`,
+        applicationCategory: 'DeveloperApplication',
+        offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+        author: { '@id': `${BOSTROT_URL}#org` },
+      };
+    }),
+  ],
+};
+
+let bostrotHtml = await readFile(
+  path.join(ROOT, 'templates', 'bostrot.html'),
+  'utf8'
 );
+bostrotHtml = bostrotHtml
+  .replaceAll('{{JSONLD}}', `<script type="application/ld+json">${JSON.stringify(bostrotJsonld)}</script>`)
+  .replaceAll('{{STATS}}', statsHtml)
+  .replaceAll('{{FEATURED}}', featuredHtml)
+  .replaceAll('{{TOTAL_STARS}}', fmt(Number(totalStarsRounded)))
+  .replaceAll('{{UPDATED}}', updated)
+  .replaceAll('{{YEAR}}', String(new Date().getFullYear()));
+
+if (bostrotHtml.includes('{{')) {
+  const leftover = bostrotHtml.match(/\{\{[A-Z_]+\}\}/g);
+  throw new Error(`Unreplaced bostrot placeholders: ${leftover?.join(', ')}`);
+}
+
+await rm(DIST_BOSTROT, { recursive: true, force: true });
+await mkdir(DIST_BOSTROT, { recursive: true });
+await cp(path.join(ROOT, 'static'), DIST_BOSTROT, { recursive: true });
+await rename(
+  path.join(DIST_BOSTROT, 'favicon-bostrot.svg'),
+  path.join(DIST_BOSTROT, 'favicon.svg')
+);
+await rm(path.join(DIST, 'favicon-bostrot.svg'), { force: true });
+await writeFile(path.join(DIST_BOSTROT, 'index.html'), bostrotHtml);
+
+// The legal pages apply to both domains (same operator).
+for (const file of await readdir(path.join(ROOT, 'templates', 'pages'))) {
+  await cp(path.join(DIST, file), path.join(DIST_BOSTROT, file));
+}
+await writeSeoFiles(DIST_BOSTROT, BOSTROT_URL);
 
 console.log(
   `Built dist/: ${featured.projects.length} featured, ${gridRepos.length} grid repos, data from ${updated}.`
 );
+console.log(`Built dist-bostrot/: company page with ${featured.projects.length} products.`);
