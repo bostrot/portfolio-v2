@@ -472,6 +472,10 @@ for (const file of pageFiles) {
   await writeFile(path.join(DIST_BOSTROT, file), renderPage(content, 'Bostrot', 'bostrot'));
 }
 await writeSeoFiles(DIST_BOSTROT, BOSTROT_URL);
+// bostrot.com is published branch-based (gh-pages): the custom domain lives in
+// a CNAME file there, and .nojekyll disables Jekyll processing.
+await writeFile(path.join(DIST_BOSTROT, 'CNAME'), 'bostrot.com\n');
+await writeFile(path.join(DIST_BOSTROT, '.nojekyll'), '');
 
 console.log(
   `Built dist/: ${featured.projects.length} featured, ${gridRepos.length} grid repos, data from ${updated}.`

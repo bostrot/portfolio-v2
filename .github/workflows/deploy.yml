@@ -50,3 +50,37 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Publishes dist-bostrot to the gh-pages branch of bostrot/bostrot.com, so
+  # both sites always deploy from the same build. Skips gracefully until the
+  # BOSTROT_DEPLOY_KEY secret (SSH deploy key with write access) exists.
+  publish-bostrot:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build site
+        run: node scripts/build.mjs
+      - name: Push dist-bostrot to bostrot.com gh-pages
+        env:
+          DEPLOY_KEY: ${{ secrets.BOSTROT_DEPLOY_KEY }}
+        run: |
+          if [ -z "$DEPLOY_KEY" ]; then
+            echo "BOSTROT_DEPLOY_KEY not set — skipping bostrot.com publish."
+            exit 0
+          fi
+          eval "$(ssh-agent -s)"
+          echo "$DEPLOY_KEY" | ssh-add -
+          cd dist-bostrot
+          git init -q -b gh-pages
+          git config user.name "Eric Trenkel"
+          git config user.email "7342321+bostrot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy from bostrot/portfolio-v2@${GITHUB_SHA::7}"
+          GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=accept-new" \
+            git push -f git@github.com:bostrot/bostrot.com.git gh-pages
