@@ -89,6 +89,15 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 .nav-logo:hover { text-decoration: none; }
 
+/* Square brand dot — matches the wordmark logo (Space Grotesk's period is round). */
+.logo-dot {
+  display: inline-block;
+  width: 0.16em;
+  height: 0.16em;
+  margin-left: 0.06em;
+  background: var(--accent);
+}
+
 .nav-links { display: flex; gap: 1.6rem; }
 .nav-links a {
   color: var(--text-dim);
