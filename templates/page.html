@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>{{TITLE}} — Eric Trenkel</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .page h1 { font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1.5rem; }
+    .page h2, .page strong { display: block; font-family: var(--font-display); font-size: 1.1rem; margin: 1.6rem 0 0.5rem; color: var(--text); }
+    .page p { color: var(--text-dim); margin-bottom: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <nav class="nav">
+    <a class="nav-logo" href="/">et<span class="accent">.</span></a>
+    <div class="nav-links"><a href="/">← Back to portfolio</a></div>
+  </nav>
+  <main class="page">
+    {{CONTENT}}
+  </main>
+  <footer class="footer">
+    <p>© 2019–{{YEAR}} Eric Trenkel</p>
+  </footer>
+</body>
+</html>
