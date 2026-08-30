@@ -194,8 +194,25 @@ const writingHtml = (extras.blog?.posts ?? [])
   )
   .join('\n');
 
-const soLine = extras.stackoverflow
-  ? `${fmt(extras.stackoverflow.reputation)} Stack Overflow rep · ${extras.stackoverflow.badges.gold}× gold`
+const pubdevMonthly = Object.values(extras.pubdev?.packages ?? {}).reduce(
+  (s, p) => s + (p.downloads30d ?? 0),
+  0
+);
+const elsewhereBits = [];
+if (extras.stackoverflow)
+  elsewhereBits.push(
+    `<a href="https://stackoverflow.com/users/5237072/bostrot" target="_blank" rel="noopener">${fmt(extras.stackoverflow.reputation)} Stack Overflow reputation</a>`
+  );
+if (pubdevMonthly)
+  elsewhereBits.push(
+    `<a href="https://pub.dev/publishers/bostrot.com/packages" target="_blank" rel="noopener">${fmt(pubdevMonthly)} pub.dev downloads/month</a>`
+  );
+if (extras.docker?.totalPulls)
+  elsewhereBits.push(
+    `<a href="https://hub.docker.com/u/bostrot" target="_blank" rel="noopener">${fmt(Math.floor(extras.docker.totalPulls / 1000))}k Docker Hub pulls</a>`
+  );
+const elsewhereLine = elsewhereBits.length
+  ? `Also elsewhere: ${elsewhereBits.join(' · ')}`
   : '';
 
 /* ---------- stats ---------- */
@@ -300,7 +317,7 @@ html = html
   .replaceAll('{{JSONLD}}', jsonldTag)
   .replaceAll('{{EXPERIENCE}}', experienceHtml)
   .replaceAll('{{WRITING}}', writingHtml)
-  .replaceAll('{{SO_LINE}}', soLine)
+  .replaceAll('{{ELSEWHERE}}', elsewhereLine)
   .replaceAll('{{TOTAL_DOWNLOADS}}', fmt(Math.floor(totalDownloads / 1000) * 1000))
   .replaceAll('{{UPDATED}}', updated)
   .replaceAll('{{YEARS_CODING}}', String(yearsCoding))

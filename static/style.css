@@ -474,3 +474,8 @@ body.js .reveal.in { opacity: 1; transform: none; }
   .nav-links { gap: 1rem; }
   .nav-links a:nth-child(3) { display: none; }
 }
+
+/* "Also elsewhere" footnote under the repo grid */
+.elsewhere { text-align: center; color: var(--text-dim); margin-top: 1.2rem; }
+.elsewhere a { color: var(--text-dim); text-decoration: underline; text-underline-offset: 3px; }
+.elsewhere a:hover { color: var(--accent); }
