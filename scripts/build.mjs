@@ -346,16 +346,21 @@ if (cvHtml.includes('{{')) {
 }
 await writeFile(path.join(DIST, 'cv.html'), cvHtml);
 
-// Secondary pages (imprint, privacy) share the site shell.
+// Secondary pages (imprint, privacy) share the site shell; the nav logo is
+// per-site ("et." vs "bostrot.").
 const pageShell = await readFile(path.join(ROOT, 'templates', 'page.html'), 'utf8');
-for (const file of await readdir(path.join(ROOT, 'templates', 'pages'))) {
-  const content = await readFile(path.join(ROOT, 'templates', 'pages', file), 'utf8');
+const renderPage = (content, titleFallback, logoText) => {
   const titleMatch = content.match(/<h1[^>]*>(.*?)<\/h1>/s);
-  const page = pageShell
+  return pageShell
     .replaceAll('{{CONTENT}}', content)
-    .replaceAll('{{TITLE}}', titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '') : 'Eric Trenkel')
+    .replaceAll('{{TITLE}}', titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '') : titleFallback)
+    .replaceAll('{{LOGO_TEXT}}', logoText)
     .replaceAll('{{YEAR}}', String(new Date().getFullYear()));
-  await writeFile(path.join(DIST, file), page);
+};
+const pageFiles = await readdir(path.join(ROOT, 'templates', 'pages'));
+for (const file of pageFiles) {
+  const content = await readFile(path.join(ROOT, 'templates', 'pages', file), 'utf8');
+  await writeFile(path.join(DIST, file), renderPage(content, 'Eric Trenkel', 'et'));
 }
 
 // SEO plumbing: sitemap (index only — legal pages are noindex) and robots.txt.
@@ -461,9 +466,10 @@ await rename(
 await rm(path.join(DIST, 'favicon-bostrot.svg'), { force: true });
 await writeFile(path.join(DIST_BOSTROT, 'index.html'), bostrotHtml);
 
-// The legal pages apply to both domains (same operator).
-for (const file of await readdir(path.join(ROOT, 'templates', 'pages'))) {
-  await cp(path.join(DIST, file), path.join(DIST_BOSTROT, file));
+// The legal pages apply to both domains (same operator) — bostrot-branded shell.
+for (const file of pageFiles) {
+  const content = await readFile(path.join(ROOT, 'templates', 'pages', file), 'utf8');
+  await writeFile(path.join(DIST_BOSTROT, file), renderPage(content, 'Bostrot', 'bostrot'));
 }
 await writeSeoFiles(DIST_BOSTROT, BOSTROT_URL);
 
