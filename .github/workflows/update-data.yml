@@ -44,6 +44,9 @@ jobs:
     needs: update
     if: needs.update.outputs.changed == 'true'
     uses: ./.github/workflows/deploy.yml
+    # Reusable workflow calls do NOT pass repository secrets by default;
+    # without this the publish-bostrot job sees an empty deploy key and skips.
+    secrets: inherit
     permissions:
       contents: read
       pages: write
