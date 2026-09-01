@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T05:27:01.463Z",
+  "fetchedAt": "2026-09-01T05:27:22.809Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 57
   },
   "totals": {
-    "stars": 5042,
+    "stars": 5044,
     "forks": 447,
     "repos": 38,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 166667
+    "releaseDownloads": 166741
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 62,
-      "downloads": 154418,
+      "downloads": 154491,
       "latestTag": "v1.11.0",
       "latestAt": "2026-04-03"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12249,
+      "downloads": 12250,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "A GUI to quickly manage your WSL2 instances",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://apps.microsoft.com/store/detail/wsl-manager/9NWS9K95NMJB",
-      "stars": 3967,
+      "stars": 3968,
       "forks": 177,
       "language": "Dart",
       "topics": [
@@ -56,14 +56,14 @@
         "wsl",
         "wsl2"
       ],
-      "pushedAt": "2026-08-31T05:16:40Z"
+      "pushedAt": "2026-08-31T23:31:03Z"
     },
     {
       "name": "telegram-support-bot",
       "description": "A Telegram ticketing/supporting system.",
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
-      "stars": 610,
+      "stars": 611,
       "forks": 202,
       "language": "TypeScript",
       "topics": [
@@ -97,7 +97,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-08-31T01:17:43Z"
+      "pushedAt": "2026-09-01T01:23:18Z"
     },
     {
       "name": "flutter_android_pip",
@@ -318,7 +318,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-08-30T18:42:42Z"
+      "pushedAt": "2026-08-31T22:10:36Z"
     },
     {
       "name": "bostrot.pro",
@@ -406,7 +406,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-08-30T18:31:56Z"
+      "pushedAt": "2026-08-31T22:10:02Z"
     },
     {
       "name": "ResilioBridge",
