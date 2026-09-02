@@ -1,14 +1,14 @@
 {
-  "fetchedAt": "2026-09-01T05:27:24.375Z",
+  "fetchedAt": "2026-09-02T05:30:34.264Z",
   "docker": {
-    "totalPulls": 41192,
+    "totalPulls": 41265,
     "repos": {
-      "gitlab-runner": 23343,
+      "gitlab-runner": 23345,
       "ghost-buster": 557,
       "ghost-static-site-generator": 3195,
       "plausible": 644,
-      "who-crawler-dependencies": 304,
-      "telegram-support-bot": 5590,
+      "who-crawler-dependencies": 372,
+      "telegram-support-bot": 5592,
       "openvpn-client": 583,
       "openconnect-client": 534,
       "telegram-send-crawler": 513,
@@ -16,7 +16,7 @@
       "ncftp": 464,
       "frigate-wheels": 84,
       "caddy": 168,
-      "protonmail-bridge": 1814,
+      "protonmail-bridge": 1815,
       "bridge-manager": 1467,
       "paperless-mcp": 426,
       "mautrix-mattermost": 862,
