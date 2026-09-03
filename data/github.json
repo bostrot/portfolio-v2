@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T05:30:33.215Z",
+  "fetchedAt": "2026-09-03T05:49:13.647Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 57
   },
   "totals": {
-    "stars": 5044,
+    "stars": 5046,
     "forks": 447,
     "repos": 38,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 166804
+    "releaseDownloads": 166889
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 62,
-      "downloads": 154553,
+      "downloads": 154638,
       "latestTag": "v1.11.0",
       "latestAt": "2026-04-03"
     },
@@ -41,7 +41,7 @@
       "description": "A GUI to quickly manage your WSL2 instances",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://apps.microsoft.com/store/detail/wsl-manager/9NWS9K95NMJB",
-      "stars": 3968,
+      "stars": 3970,
       "forks": 177,
       "language": "Dart",
       "topics": [
@@ -97,7 +97,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-02T01:11:33Z"
+      "pushedAt": "2026-09-03T01:14:35Z"
     },
     {
       "name": "flutter_android_pip",
@@ -318,7 +318,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-01T05:27:47Z"
+      "pushedAt": "2026-09-02T05:31:38Z"
     },
     {
       "name": "bostrot.pro",
@@ -406,7 +406,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-01T05:27:25Z"
+      "pushedAt": "2026-09-02T05:30:35Z"
     },
     {
       "name": "ResilioBridge",
