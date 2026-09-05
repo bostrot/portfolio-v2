@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-04T05:26:30.716Z",
+  "fetchedAt": "2026-09-05T05:24:52.983Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 57
   },
   "totals": {
-    "stars": 5046,
+    "stars": 5045,
     "forks": 447,
     "repos": 38,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 166980
+    "releaseDownloads": 167068
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 62,
-      "downloads": 154724,
+      "downloads": 154812,
       "latestTag": "v1.11.0",
       "latestAt": "2026-04-03"
     },
@@ -41,7 +41,7 @@
       "description": "A GUI to quickly manage your WSL2 instances",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://apps.microsoft.com/store/detail/wsl-manager/9NWS9K95NMJB",
-      "stars": 3970,
+      "stars": 3969,
       "forks": 177,
       "language": "Dart",
       "topics": [
@@ -97,7 +97,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-04T01:11:04Z"
+      "pushedAt": "2026-09-05T01:09:07Z"
     },
     {
       "name": "flutter_android_pip",
@@ -182,7 +182,7 @@
       "forks": 11,
       "language": "Python",
       "topics": [],
-      "pushedAt": "2026-09-03T18:35:59Z"
+      "pushedAt": "2026-09-04T22:25:49Z"
     },
     {
       "name": "steam_keys_activator",
@@ -318,7 +318,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-03T05:49:52Z"
+      "pushedAt": "2026-09-04T05:27:12Z"
     },
     {
       "name": "bostrot.pro",
@@ -406,7 +406,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-03T05:49:18Z"
+      "pushedAt": "2026-09-04T05:26:32Z"
     },
     {
       "name": "ResilioBridge",
@@ -437,9 +437,9 @@
       "homepage": null,
       "stars": 0,
       "forks": 0,
-      "language": "JavaScript",
+      "language": "Astro",
       "topics": [],
-      "pushedAt": "2026-05-16T14:31:12Z"
+      "pushedAt": "2026-09-04T23:36:34Z"
     }
   ]
 }
