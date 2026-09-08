@@ -1,26 +1,26 @@
 {
-  "fetchedAt": "2026-09-07T05:27:26.352Z",
+  "fetchedAt": "2026-09-08T05:26:49.519Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/7342321?v=4",
     "url": "https://github.com/bostrot",
-    "followers": 161,
-    "publicRepos": 61
+    "followers": 162,
+    "publicRepos": 66
   },
   "totals": {
-    "stars": 5046,
-    "forks": 447,
+    "stars": 5063,
+    "forks": 449,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 167419
+    "releaseDownloads": 168158
   },
   "releases": {
     "wsl2-distro-manager": {
-      "count": 63,
-      "downloads": 155161,
-      "latestTag": "v2.0.0",
-      "latestAt": "2026-09-06"
+      "count": 64,
+      "downloads": 155898,
+      "latestTag": "v2.0.1",
+      "latestAt": "2026-09-07"
     },
     "telegram-support-bot": {
       "count": 16,
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12258,
+      "downloads": 12260,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,8 +41,8 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://wslmanager.com",
-      "stars": 3970,
-      "forks": 177,
+      "stars": 3986,
+      "forks": 179,
       "language": "Dart",
       "topics": [
         "ai",
@@ -63,7 +63,7 @@
         "wsl",
         "wsl2"
       ],
-      "pushedAt": "2026-09-06T20:04:25Z"
+      "pushedAt": "2026-09-07T21:44:50Z"
     },
     {
       "name": "telegram-support-bot",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-07T01:17:11Z"
+      "pushedAt": "2026-09-08T01:13:13Z"
     },
     {
       "name": "flutter_android_pip",
@@ -135,7 +135,7 @@
         "plausible",
         "plausible-analytics"
       ],
-      "pushedAt": "2024-02-12T13:26:08Z"
+      "pushedAt": "2026-09-07T21:09:34Z"
     },
     {
       "name": "flutter_repo_wiki",
@@ -276,6 +276,24 @@
       "pushedAt": "2019-09-12T12:48:36Z"
     },
     {
+      "name": "hacs-dx482-doorbell",
+      "description": "Local Home Assistant integration for the 2easy DX482 video doorbell (door control, RTSP video, ring detection)",
+      "url": "https://github.com/bostrot/hacs-dx482-doorbell",
+      "homepage": null,
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "topics": [
+        "2easy",
+        "doorbell",
+        "dx482",
+        "hacs",
+        "hacs-integration",
+        "home-assistant"
+      ],
+      "pushedAt": "2026-09-07T22:44:01Z"
+    },
+    {
       "name": "wahlapp",
       "description": "App for election information gathering about voters and their most important topics using Angular.",
       "url": "https://github.com/bostrot/wahlapp",
@@ -325,7 +343,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-06T05:25:03Z"
+      "pushedAt": "2026-09-07T05:27:46Z"
     },
     {
       "name": "bostrot.pro",
@@ -383,24 +401,6 @@
       "pushedAt": "2026-09-06T18:58:07Z"
     },
     {
-      "name": "hacs-dx482-doorbell",
-      "description": "Local Home Assistant integration for the 2easy DX482 video doorbell (door control, RTSP video, ring detection)",
-      "url": "https://github.com/bostrot/hacs-dx482-doorbell",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "topics": [
-        "2easy",
-        "doorbell",
-        "dx482",
-        "hacs",
-        "hacs-integration",
-        "home-assistant"
-      ],
-      "pushedAt": "2026-09-06T20:34:04Z"
-    },
-    {
       "name": "homebrew-tap",
       "description": "Homebrew casks for WSL Manager",
       "url": "https://github.com/bostrot/homebrew-tap",
@@ -409,7 +409,7 @@
       "forks": 0,
       "language": "Ruby",
       "topics": [],
-      "pushedAt": "2026-09-06T19:53:32Z"
+      "pushedAt": "2026-09-07T22:26:56Z"
     },
     {
       "name": "mautrix-mattermost",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-06T05:24:27Z"
+      "pushedAt": "2026-09-07T05:27:28Z"
     },
     {
       "name": "ResilioBridge",
