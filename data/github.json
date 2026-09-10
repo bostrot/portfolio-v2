@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-09T05:27:04.140Z",
+  "fetchedAt": "2026-09-10T05:26:15.323Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5065,
-    "forks": 449,
+    "stars": 5068,
+    "forks": 448,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 168786
+    "releaseDownloads": 169222
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 65,
-      "downloads": 156524,
+      "downloads": 156958,
       "latestTag": "v2.0.2",
       "latestAt": "2026-09-08"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12262,
+      "downloads": 12264,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://wslmanager.com",
-      "stars": 3988,
+      "stars": 3991,
       "forks": 179,
       "language": "Dart",
       "topics": [
@@ -63,7 +63,7 @@
         "wsl",
         "wsl2"
       ],
-      "pushedAt": "2026-09-08T20:53:48Z"
+      "pushedAt": "2026-09-09T20:02:24Z"
     },
     {
       "name": "telegram-support-bot",
@@ -71,7 +71,7 @@
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
       "stars": 611,
-      "forks": 202,
+      "forks": 201,
       "language": "TypeScript",
       "topics": [
         "bot",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-09T01:13:04Z"
+      "pushedAt": "2026-09-10T01:11:45Z"
     },
     {
       "name": "flutter_android_pip",
@@ -291,7 +291,7 @@
         "hacs-integration",
         "home-assistant"
       ],
-      "pushedAt": "2026-09-08T05:59:12Z"
+      "pushedAt": "2026-09-09T19:37:11Z"
     },
     {
       "name": "wahlapp",
@@ -343,7 +343,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-08T05:27:23Z"
+      "pushedAt": "2026-09-09T05:28:15Z"
     },
     {
       "name": "bostrot.pro",
@@ -409,7 +409,7 @@
       "forks": 0,
       "language": "Ruby",
       "topics": [],
-      "pushedAt": "2026-09-08T21:05:03Z"
+      "pushedAt": "2026-09-09T17:54:09Z"
     },
     {
       "name": "mautrix-mattermost",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-08T05:26:52Z"
+      "pushedAt": "2026-09-09T05:27:06Z"
     },
     {
       "name": "ResilioBridge",
