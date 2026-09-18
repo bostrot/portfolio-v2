@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-17T05:27:27.361Z",
+  "fetchedAt": "2026-09-18T05:26:21.228Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,18 +9,18 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5081,
-    "forks": 450,
+    "stars": 5083,
+    "forks": 451,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 172497
+    "releaseDownloads": 172879
   },
   "releases": {
     "wsl2-distro-manager": {
-      "count": 69,
-      "downloads": 160223,
-      "latestTag": "v2.2.0",
-      "latestAt": "2026-09-13"
+      "count": 70,
+      "downloads": 160604,
+      "latestTag": "v2.3.0",
+      "latestAt": "2026-09-17"
     },
     "telegram-support-bot": {
       "count": 16,
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12274,
+      "downloads": 12275,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wsl2-distro-manager",
       "homepage": "https://wslmanager.com",
-      "stars": 4000,
+      "stars": 4002,
       "forks": 178,
       "language": "Dart",
       "topics": [
@@ -63,7 +63,7 @@
         "wsl",
         "wsl2"
       ],
-      "pushedAt": "2026-09-13T11:08:02Z"
+      "pushedAt": "2026-09-17T23:00:08Z"
     },
     {
       "name": "telegram-support-bot",
@@ -71,7 +71,7 @@
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
       "stars": 612,
-      "forks": 204,
+      "forks": 205,
       "language": "TypeScript",
       "topics": [
         "bot",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-17T01:14:10Z"
+      "pushedAt": "2026-09-18T01:14:14Z"
     },
     {
       "name": "flutter_android_pip",
@@ -343,7 +343,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-16T05:28:13Z"
+      "pushedAt": "2026-09-17T05:28:01Z"
     },
     {
       "name": "bostrot.pro",
@@ -409,7 +409,7 @@
       "forks": 0,
       "language": "Ruby",
       "topics": [],
-      "pushedAt": "2026-09-13T11:12:10Z"
+      "pushedAt": "2026-09-17T23:10:30Z"
     },
     {
       "name": "mautrix-mattermost",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-16T05:27:49Z"
+      "pushedAt": "2026-09-17T05:27:29Z"
     },
     {
       "name": "ResilioBridge",
