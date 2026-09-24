@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-09-23T05:27:33.258Z",
+  "fetchedAt": "2026-09-24T05:27:34.698Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/7342321?v=4",
     "url": "https://github.com/bostrot",
-    "followers": 164,
+    "followers": 165,
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5089,
+    "stars": 5088,
     "forks": 452,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 174683
+    "releaseDownloads": 174861
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 72,
-      "downloads": 162399,
+      "downloads": 162574,
       "latestTag": "v2.4.1",
       "latestAt": "2026-09-20"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12284,
+      "downloads": 12287,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4007,
+      "stars": 4006,
       "forks": 178,
       "language": "Dart",
       "topics": [
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-23T01:13:04Z"
+      "pushedAt": "2026-09-24T01:12:07Z"
     },
     {
       "name": "flutter_android_pip",
@@ -269,7 +269,7 @@
         "hacs-integration",
         "home-assistant"
       ],
-      "pushedAt": "2026-09-14T19:36:03Z"
+      "pushedAt": "2026-09-23T20:35:40Z"
     },
     {
       "name": "flutter_applovin",
@@ -343,7 +343,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-22T05:28:17Z"
+      "pushedAt": "2026-09-23T05:28:06Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-22T05:27:42Z"
+      "pushedAt": "2026-09-23T05:27:35Z"
     },
     {
       "name": "ResilioBridge",
@@ -486,7 +486,7 @@
       "forks": 0,
       "language": "Astro",
       "topics": [],
-      "pushedAt": "2026-09-04T23:36:34Z"
+      "pushedAt": "2026-09-23T20:35:24Z"
     }
   ]
 }
