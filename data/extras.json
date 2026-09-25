@@ -1,11 +1,11 @@
 {
-  "fetchedAt": "2026-09-24T05:27:35.859Z",
+  "fetchedAt": "2026-09-25T05:27:46.658Z",
   "docker": {
-    "totalPulls": 41845,
+    "totalPulls": 41869,
     "repos": {
-      "gitlab-runner": 23422,
-      "ghost-buster": 568,
-      "ghost-static-site-generator": 3226,
+      "gitlab-runner": 23426,
+      "ghost-buster": 572,
+      "ghost-static-site-generator": 3230,
       "plausible": 647,
       "who-crawler-dependencies": 377,
       "telegram-support-bot": 5880,
@@ -16,12 +16,12 @@
       "ncftp": 473,
       "frigate-wheels": 108,
       "caddy": 168,
-      "protonmail-bridge": 1840,
-      "bridge-manager": 1484,
+      "protonmail-bridge": 1845,
+      "bridge-manager": 1487,
       "paperless-mcp": 437,
       "mautrix-mattermost": 865,
       "maestro": 235,
-      "paseo": 189
+      "paseo": 193
     }
   },
   "stackoverflow": {
@@ -36,7 +36,7 @@
     "packages": {
       "plausible_analytics": {
         "likes": 17,
-        "downloads30d": 2916
+        "downloads30d": 2962
       },
       "chunked_downloader": {
         "likes": 7,
