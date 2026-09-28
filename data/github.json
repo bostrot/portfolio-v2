@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-27T05:27:09.348Z",
+  "fetchedAt": "2026-09-28T05:31:13.263Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5090,
-    "forks": 451,
+    "stars": 5089,
+    "forks": 453,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 175540
+    "releaseDownloads": 175680
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 72,
-      "downloads": 163250,
+      "downloads": 163389,
       "latestTag": "v2.4.1",
       "latestAt": "2026-09-20"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12290,
+      "downloads": 12291,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,8 +41,8 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4007,
-      "forks": 177,
+      "stars": 4005,
+      "forks": 178,
       "language": "Dart",
       "topics": [
         "ai",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-09-27T01:22:40Z"
+      "pushedAt": "2026-09-28T01:24:09Z"
     },
     {
       "name": "flutter_android_pip",
@@ -294,6 +294,17 @@
       "pushedAt": "2019-09-12T12:48:36Z"
     },
     {
+      "name": "mautrix-mattermost",
+      "description": null,
+      "url": "https://github.com/bostrot/mautrix-mattermost",
+      "homepage": null,
+      "stars": 1,
+      "forks": 1,
+      "language": "Go",
+      "topics": [],
+      "pushedAt": "2026-03-05T21:35:03Z"
+    },
+    {
       "name": "wahlapp",
       "description": "App for election information gathering about voters and their most important topics using Angular.",
       "url": "https://github.com/bostrot/wahlapp",
@@ -343,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-09-26T05:26:47Z"
+      "pushedAt": "2026-09-27T05:27:35Z"
     },
     {
       "name": "bostrot.pro",
@@ -412,17 +423,6 @@
       "pushedAt": "2026-09-20T20:44:41Z"
     },
     {
-      "name": "mautrix-mattermost",
-      "description": null,
-      "url": "https://github.com/bostrot/mautrix-mattermost",
-      "homepage": null,
-      "stars": 0,
-      "forks": 0,
-      "language": "Go",
-      "topics": [],
-      "pushedAt": "2026-03-05T21:35:03Z"
-    },
-    {
       "name": "packages-repo",
       "description": "Automatic upgraded packages for some package managers",
       "url": "https://github.com/bostrot/packages-repo",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-09-26T05:26:25Z"
+      "pushedAt": "2026-09-27T05:27:11Z"
     },
     {
       "name": "ResilioBridge",
