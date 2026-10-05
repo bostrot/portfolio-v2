@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T07:11:31.234Z",
+  "fetchedAt": "2026-10-05T05:40:01.678Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5106,
+    "stars": 5107,
     "forks": 454,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 176964
+    "releaseDownloads": 177151
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 164662,
+      "downloads": 164846,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12302,
+      "downloads": 12305,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4020,
+      "stars": 4022,
       "forks": 179,
       "language": "Dart",
       "topics": [
@@ -70,7 +70,7 @@
       "description": "A Telegram ticketing/supporting system.",
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
-      "stars": 614,
+      "stars": 613,
       "forks": 205,
       "language": "TypeScript",
       "topics": [
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-10-04T01:49:54Z"
+      "pushedAt": "2026-10-05T01:25:35Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-10-03T05:36:47Z"
+      "pushedAt": "2026-10-04T07:11:59Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-10-03T05:36:20Z"
+      "pushedAt": "2026-10-04T07:11:33Z"
     },
     {
       "name": "ResilioBridge",
