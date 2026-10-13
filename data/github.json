@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-12T05:38:04.461Z",
+  "fetchedAt": "2026-10-13T05:33:16.322Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5116,
+    "stars": 5115,
     "forks": 454,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 178357
+    "releaseDownloads": 178534
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 166042,
+      "downloads": 166213,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12315,
+      "downloads": 12321,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -70,7 +70,7 @@
       "description": "A Telegram ticketing/supporting system.",
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
-      "stars": 614,
+      "stars": 613,
       "forks": 205,
       "language": "TypeScript",
       "topics": [
@@ -85,7 +85,7 @@
         "ticketing",
         "ticketing-system"
       ],
-      "pushedAt": "2026-10-06T09:30:39Z"
+      "pushedAt": "2026-10-12T11:03:33Z"
     },
     {
       "name": "PowerToysRunPluginWinget",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-10-12T01:31:48Z"
+      "pushedAt": "2026-10-13T01:26:32Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-10-11T05:29:53Z"
+      "pushedAt": "2026-10-12T05:38:33Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-10-11T05:29:22Z"
+      "pushedAt": "2026-10-12T05:38:06Z"
     },
     {
       "name": "ResilioBridge",
