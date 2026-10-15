@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T05:27:47.093Z",
+  "fetchedAt": "2026-10-15T05:27:53.839Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 66
   },
   "totals": {
-    "stars": 5114,
+    "stars": 5116,
     "forks": 456,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 178721
+    "releaseDownloads": 178833
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 166399,
+      "downloads": 166508,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12322,
+      "downloads": 12325,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4027,
+      "stars": 4028,
       "forks": 180,
       "language": "Dart",
       "topics": [
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-10-14T01:12:22Z"
+      "pushedAt": "2026-10-15T01:08:19Z"
     },
     {
       "name": "flutter_android_pip",
@@ -221,6 +221,24 @@
       "pushedAt": "2026-09-14T21:02:09Z"
     },
     {
+      "name": "hacs-dx482-doorbell",
+      "description": "Local Home Assistant integration for the 2easy DX482 video doorbell (door control, RTSP video, ring detection)",
+      "url": "https://github.com/bostrot/hacs-dx482-doorbell",
+      "homepage": null,
+      "stars": 3,
+      "forks": 1,
+      "language": "Python",
+      "topics": [
+        "2easy",
+        "doorbell",
+        "dx482",
+        "hacs",
+        "hacs-integration",
+        "home-assistant"
+      ],
+      "pushedAt": "2026-09-23T20:35:40Z"
+    },
+    {
       "name": "RustyFS",
       "description": "RustyFS is a minimal multithreading file server written in Rust, inspired by the Rust example. It allows for easy and efficient file sharing between clients and servers through its multi-threaded architecture. With RustyFS, users can transfer files with ease while enjoying the speed and safety provided by the Rust programming language.",
       "url": "https://github.com/bostrot/RustyFS",
@@ -252,24 +270,6 @@
       "language": "Dockerfile",
       "topics": [],
       "pushedAt": "2021-11-23T00:16:03Z"
-    },
-    {
-      "name": "hacs-dx482-doorbell",
-      "description": "Local Home Assistant integration for the 2easy DX482 video doorbell (door control, RTSP video, ring detection)",
-      "url": "https://github.com/bostrot/hacs-dx482-doorbell",
-      "homepage": null,
-      "stars": 2,
-      "forks": 1,
-      "language": "Python",
-      "topics": [
-        "2easy",
-        "doorbell",
-        "dx482",
-        "hacs",
-        "hacs-integration",
-        "home-assistant"
-      ],
-      "pushedAt": "2026-09-23T20:35:40Z"
     },
     {
       "name": "flutter_applovin",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-10-13T05:33:58Z"
+      "pushedAt": "2026-10-14T05:28:20Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-10-13T05:33:19Z"
+      "pushedAt": "2026-10-14T05:27:49Z"
     },
     {
       "name": "ResilioBridge",
