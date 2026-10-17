@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-16T05:27:47.152Z",
+  "fetchedAt": "2026-10-17T05:26:02.099Z",
   "docker": {
-    "totalPulls": 42904,
+    "totalPulls": 42910,
     "repos": {
       "gitlab-runner": 23429,
       "ghost-buster": 585,
@@ -9,14 +9,14 @@
       "plausible": 664,
       "who-crawler-dependencies": 395,
       "telegram-support-bot": 6503,
-      "openvpn-client": 665,
+      "openvpn-client": 670,
       "openconnect-client": 585,
       "telegram-send-crawler": 571,
       "flutter": 241,
       "ncftp": 491,
       "frigate-wheels": 114,
       "caddy": 175,
-      "protonmail-bridge": 1899,
+      "protonmail-bridge": 1900,
       "bridge-manager": 1502,
       "paperless-mcp": 440,
       "mautrix-mattermost": 876,
@@ -36,15 +36,15 @@
     "packages": {
       "plausible_analytics": {
         "likes": 17,
-        "downloads30d": 1951
+        "downloads30d": 1934
       },
       "chunked_downloader": {
         "likes": 7,
-        "downloads30d": 464
+        "downloads30d": 452
       },
       "flutter_android_pip": {
         "likes": 17,
-        "downloads30d": 38
+        "downloads30d": 39
       }
     }
   },
