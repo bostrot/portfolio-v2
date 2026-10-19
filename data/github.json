@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T05:25:42.500Z",
+  "fetchedAt": "2026-10-19T05:29:09.962Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -13,12 +13,12 @@
     "forks": 456,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 179332
+    "releaseDownloads": 179514
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 167000,
+      "downloads": 167182,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-10-17T05:26:34Z"
+      "pushedAt": "2026-10-18T05:26:19Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-10-17T05:26:03Z"
+      "pushedAt": "2026-10-18T05:25:45Z"
     },
     {
       "name": "ResilioBridge",
