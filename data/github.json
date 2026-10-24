@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T05:27:47.888Z",
+  "fetchedAt": "2026-10-24T05:26:34.697Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -13,12 +13,12 @@
     "forks": 457,
     "repos": 41,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 180054
+    "releaseDownloads": 180155
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 167714,
+      "downloads": 167815,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-10-23T01:14:52Z"
+      "pushedAt": "2026-10-24T01:10:58Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-10-22T05:29:06Z"
+      "pushedAt": "2026-10-23T05:28:19Z"
     },
     {
       "name": "bostrot.pro",
@@ -453,7 +453,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-10-22T05:28:26Z"
+      "pushedAt": "2026-10-23T05:27:49Z"
     },
     {
       "name": "ResilioBridge",
