@@ -1,27 +1,27 @@
 {
-  "fetchedAt": "2026-10-27T05:29:35.893Z",
+  "fetchedAt": "2026-10-28T05:22:22.214Z",
   "docker": {
-    "totalPulls": 43638,
+    "totalPulls": 43733,
     "repos": {
-      "gitlab-runner": 23433,
-      "ghost-buster": 597,
-      "ghost-static-site-generator": 3331,
-      "plausible": 682,
-      "who-crawler-dependencies": 396,
-      "telegram-support-bot": 6950,
-      "openvpn-client": 677,
-      "openconnect-client": 592,
-      "telegram-send-crawler": 608,
-      "flutter": 243,
-      "ncftp": 500,
+      "gitlab-runner": 23436,
+      "ghost-buster": 608,
+      "ghost-static-site-generator": 3340,
+      "plausible": 691,
+      "who-crawler-dependencies": 397,
+      "telegram-support-bot": 6966,
+      "openvpn-client": 689,
+      "openconnect-client": 599,
+      "telegram-send-crawler": 615,
+      "flutter": 244,
+      "ncftp": 504,
       "frigate-wheels": 117,
-      "caddy": 176,
-      "protonmail-bridge": 1933,
-      "bridge-manager": 1508,
+      "caddy": 177,
+      "protonmail-bridge": 1935,
+      "bridge-manager": 1514,
       "paperless-mcp": 470,
-      "mautrix-mattermost": 879,
-      "maestro": 279,
-      "paseo": 267
+      "mautrix-mattermost": 880,
+      "maestro": 280,
+      "paseo": 271
     }
   },
   "stackoverflow": {
@@ -36,15 +36,15 @@
     "packages": {
       "plausible_analytics": {
         "likes": 17,
-        "downloads30d": 1869
+        "downloads30d": 1859
       },
       "chunked_downloader": {
         "likes": 7,
-        "downloads30d": 340
+        "downloads30d": 344
       },
       "flutter_android_pip": {
         "likes": 17,
-        "downloads30d": 49
+        "downloads30d": 53
       }
     }
   },
