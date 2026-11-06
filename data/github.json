@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-11-05T05:20:09.780Z",
+  "fetchedAt": "2026-11-06T05:19:51.612Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/7342321?v=4",
     "url": "https://github.com/bostrot",
-    "followers": 168,
-    "publicRepos": 66
+    "followers": 169,
+    "publicRepos": 67
   },
   "totals": {
-    "stars": 5149,
+    "stars": 5152,
     "forks": 459,
-    "repos": 41,
+    "repos": 42,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 181577
+    "releaseDownloads": 181783
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 169214,
+      "downloads": 169418,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12363,
+      "downloads": 12365,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4053,
+      "stars": 4056,
       "forks": 182,
       "language": "Dart",
       "topics": [
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-11-05T00:50:27Z"
+      "pushedAt": "2026-11-06T00:53:19Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-11-04T05:21:32Z"
+      "pushedAt": "2026-11-05T05:20:42Z"
     },
     {
       "name": "bostrot.pro",
@@ -423,6 +423,17 @@
       "pushedAt": "2026-10-01T22:11:50Z"
     },
     {
+      "name": "laserhop",
+      "description": "Puts a USB-only laser engraver and its camera on the network, from the oldest, slowest Linux board you have",
+      "url": "https://github.com/bostrot/laserhop",
+      "homepage": null,
+      "stars": 0,
+      "forks": 0,
+      "language": "Rust",
+      "topics": [],
+      "pushedAt": "2026-11-05T20:26:03Z"
+    },
+    {
       "name": "packages-repo",
       "description": "Automatic upgraded packages for some package managers",
       "url": "https://github.com/bostrot/packages-repo",
@@ -453,7 +464,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-11-04T05:21:03Z"
+      "pushedAt": "2026-11-05T05:20:12Z"
     },
     {
       "name": "ResilioBridge",
@@ -486,7 +497,7 @@
       "forks": 0,
       "language": "Astro",
       "topics": [],
-      "pushedAt": "2026-09-23T20:35:24Z"
+      "pushedAt": "2026-11-06T04:52:27Z"
     }
   ]
 }
