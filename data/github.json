@@ -1,24 +1,24 @@
 {
-  "fetchedAt": "2026-11-10T05:20:14.745Z",
+  "fetchedAt": "2026-11-11T05:20:08.155Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
     "avatarUrl": "https://avatars.githubusercontent.com/u/7342321?v=4",
     "url": "https://github.com/bostrot",
-    "followers": 169,
+    "followers": 168,
     "publicRepos": 67
   },
   "totals": {
-    "stars": 5153,
+    "stars": 5154,
     "forks": 458,
     "repos": 42,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 182462
+    "releaseDownloads": 182572
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 170091,
+      "downloads": 170201,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4057,
+      "stars": 4058,
       "forks": 182,
       "language": "Dart",
       "topics": [
@@ -70,7 +70,7 @@
       "description": "A Telegram ticketing/supporting system.",
       "url": "https://github.com/bostrot/telegram-support-bot",
       "homepage": "https://botspace.bostrot.com",
-      "stars": 618,
+      "stars": 619,
       "forks": 206,
       "language": "TypeScript",
       "topics": [
@@ -92,7 +92,7 @@
       "description": "Winget plugin for PowerToys Run",
       "url": "https://github.com/bostrot/PowerToysRunPluginWinget",
       "homepage": null,
-      "stars": 338,
+      "stars": 337,
       "forks": 17,
       "language": "C#",
       "topics": [
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-11-10T00:52:24Z"
+      "pushedAt": "2026-11-11T00:52:03Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-11-09T05:21:38Z"
+      "pushedAt": "2026-11-10T05:20:47Z"
     },
     {
       "name": "bostrot.pro",
@@ -464,7 +464,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-11-09T05:21:17Z"
+      "pushedAt": "2026-11-10T05:20:17Z"
     },
     {
       "name": "ResilioBridge",
