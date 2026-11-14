@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T05:20:17.179Z",
+  "fetchedAt": "2026-11-14T05:20:04.199Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 67
   },
   "totals": {
-    "stars": 5155,
-    "forks": 458,
+    "stars": 5153,
+    "forks": 459,
     "repos": 42,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 182946
+    "releaseDownloads": 183108
   },
   "releases": {
     "wsl2-distro-manager": {
       "count": 73,
-      "downloads": 170572,
+      "downloads": 170732,
       "latestTag": "v2.5.0",
       "latestAt": "2026-10-01"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12374,
+      "downloads": 12376,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,8 +41,8 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4060,
-      "forks": 182,
+      "stars": 4058,
+      "forks": 183,
       "language": "Dart",
       "topics": [
         "ai",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-11-13T00:52:54Z"
+      "pushedAt": "2026-11-14T00:50:40Z"
     },
     {
       "name": "flutter_android_pip",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-11-12T05:20:47Z"
+      "pushedAt": "2026-11-13T05:21:01Z"
     },
     {
       "name": "bostrot.pro",
@@ -464,7 +464,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-11-12T05:20:14Z"
+      "pushedAt": "2026-11-13T05:20:22Z"
     },
     {
       "name": "ResilioBridge",
