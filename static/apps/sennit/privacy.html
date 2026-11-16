@@ -18,7 +18,7 @@ code{font-size:.9em} ul{padding-left:1.3rem}
 <body>
 <main>
 <h1>Sennit Privacy Policy</h1>
-<p><em>Effective: 15 November 2026</em></p>
+<p><em>Effective: 16 November 2026</em></p>
 <p>Sennit is a self-hosted messenger. It is designed so that the developer of Sennit <strong>cannot</strong> see your data — there is no Sennit cloud, no account with us, and no telemetry.</p>
 <h2>What Sennit collects</h2>
 <p>Nothing. The app contains no analytics, no crash reporting service, no advertising SDKs, and no tracking of any kind. The developer operates no server that your messages or contacts ever reach. The one exception, licence checks in builds downloaded outside the app stores, is described under <em>Sennit Pro</em> below.</p>
@@ -45,6 +45,16 @@ code{font-size:.9em} ul{padding-left:1.3rem}
   <li>Sennit never auto-replies to a message request from someone you have not answered. Replying would confirm your handle is live and being read, and that is a decision only you make.</li>
   <li>No conversation receives more than three automatic replies an hour, whatever your rules say. This limit is not adjustable.</li>
 </ul>
+<h2>SMS (Android only)</h2>
+<p>On Android, Sennit can be your default messaging app. This is optional and off until you choose Sennit in Android's own "Default SMS app" dialog; until then Sennit cannot read or send text messages at all.</p>
+<ul>
+  <li><strong>What it reads.</strong> While it holds that role, Sennit reads, receives and sends the SMS and MMS on your phone so they appear in the same inbox as your other conversations.</li>
+  <li><strong>Where they go.</strong> Nowhere new. Text messages stay in Android's message store on your device and travel over your carrier, as they do with any SMS app. Sennit does not upload them to your Matrix homeserver, to a bridge, or to the developer.</li>
+  <li><strong>On-device use.</strong> Their text is added to the local search index, and a number that also has a chat on another network can be shown as one conversation. Both happen on the device.</li>
+  <li><strong>Features you switch on.</strong> If you configure a remote AI endpoint and use it on a text conversation — an auto-reply rule that covers SMS, for example — the content you asked it to process goes to that endpoint, as described above. A backup file you create may include your text messages; it is encrypted on your device as described under <em>Backups</em>.</li>
+  <li><strong>SMS is not encrypted.</strong> Your carrier and the recipient's carrier can read every text message. Sennit cannot change that, and says so above the composer whenever a message will go out as SMS.</li>
+  <li>Choosing another default messaging app in Android's settings ends Sennit's access immediately.</li>
+</ul>
 <h2>What stays on your device</h2>
 <ul>
   <li>Message history, search indexes and media caches, stored locally.</li>
@@ -61,7 +71,7 @@ code{font-size:.9em} ul{padding-left:1.3rem}
   <li>Restoring reads only the file you pick. Nothing is contacted, and nothing is written until you have seen what the file contains.</li>
 </ul>
 <h2>Permissions</h2>
-<p>Sennit asks for permissions only when a feature needs them: microphone for voice messages and calls, camera for photos and QR device verification, contacts for local name matching, location only when you explicitly share it into a chat, and notifications. Denying a permission disables only the feature that wanted it.</p>
+<p>Sennit asks for permissions only when a feature needs them: microphone for voice messages and calls, camera for photos and QR device verification, contacts for local name matching, location only when you explicitly share it into a chat, notifications, and — on Android, only if you make Sennit your default messaging app — SMS. Denying a permission disables only the feature that wanted it.</p>
 <h2>Your rights</h2>
 <p>Your data lives on your homeserver and your device. Deleting the app removes its local data; your homeserver's data is managed through your homeserver. There is nothing held by the developer to request, export, or delete.</p>
 <h2>Changes and contact</h2>
