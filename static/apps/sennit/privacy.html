@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sennit Privacy Policy</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1b20;--dim:#49454f;--link:#4f46e5}
+@media (prefers-color-scheme:dark){:root{--bg:#141218;--fg:#e6e0e9;--dim:#cac4d0;--link:#a5b4fc}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:2.5rem 1rem 4rem}
+h1{font-size:1.8rem;margin:0 0 1rem} h2{font-size:1.15rem;margin:2rem 0 .5rem}
+p,li{color:var(--dim)} strong{color:var(--fg)} a{color:var(--link)}
+code{font-size:.9em} ul{padding-left:1.3rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Sennit Privacy Policy</h1>
+<p><em>Effective: 15 November 2026</em></p>
+<p>Sennit is a self-hosted messenger. It is designed so that the developer of Sennit <strong>cannot</strong> see your data — there is no Sennit cloud, no account with us, and no telemetry.</p>
+<h2>What Sennit collects</h2>
+<p>Nothing. The app contains no analytics, no crash reporting service, no advertising SDKs, and no tracking of any kind. The developer operates no server that your messages or contacts ever reach. The one exception, licence checks in builds downloaded outside the app stores, is described under <em>Sennit Pro</em> below.</p>
+<h2>Sennit Pro</h2>
+<p>Sennit Pro is an optional one-time purchase.</p>
+<ul>
+  <li><strong>From the App Store or Google Play:</strong> Apple or Google handle the payment and tell the app whether you own Pro. The developer receives the store's usual sales reports, which contain no messages, contacts or other content from the app.</li>
+  <li><strong>Builds downloaded from the project's release page:</strong> you buy a licence key through Stripe. Stripe processes the payment, and the developer keeps your email address and licence key to deliver and support the licence. When you enter the key, the app sends <strong>the key and nothing else</strong> — no device id, account or app data — to the developer's licence service to check that it is valid.</li>
+</ul>
+<h2>Where your data goes</h2>
+<p>Sennit talks exclusively to servers <strong>you</strong> configure:</p>
+<ul>
+  <li><strong>Your Matrix homeserver.</strong> Messages, media, contacts and encryption keys sync with the homeserver you sign in to. That server is operated by you or by whoever you chose — its privacy practices are its operator's.</li>
+  <li><strong>Bridges you install</strong> on your own infrastructure relay messages to third-party networks (for example WhatsApp or Telegram). Those networks see what any client on them sees; the bridge runs under your control.</li>
+  <li><strong>Optional AI endpoints.</strong> Voice transcription, semantic search embeddings, reply suggestions and auto-reply only run if you configure an endpoint for them. On-device models never send audio or text anywhere. If you point Sennit at a remote endpoint, the content you asked it to process is sent to that endpoint — which, again, you chose and control.</li>
+</ul>
+<h2>Auto-reply</h2>
+<p>Sennit can answer messages for you, using the same model endpoint you configured above and no other. Nothing about this feature reaches the developer, and there is no service in the middle.</p>
+<ul>
+  <li>It is <strong>off until you write a rule and switch that rule on</strong>. A rule you have saved but not enabled sends nothing.</li>
+  <li>When a rule fires, Sennit sends your prompt and <strong>the last few messages of that conversation</strong> to your endpoint, and sends what comes back as a message from you. Nothing else about the conversation is included.</li>
+  <li>The reply is marked as machine-written, so you and anyone using a client that understands the marker can tell it apart from something you typed.</li>
+  <li><strong>The conversation stays unread.</strong> Sennit does not send a read receipt for an auto-reply and does not clear the badge — on this device or on your others. The other side is told a message arrived, not that theirs was read.</li>
+  <li>Sennit never auto-replies to a message request from someone you have not answered. Replying would confirm your handle is live and being read, and that is a decision only you make.</li>
+  <li>No conversation receives more than three automatic replies an hour, whatever your rules say. This limit is not adjustable.</li>
+</ul>
+<h2>What stays on your device</h2>
+<ul>
+  <li>Message history, search indexes and media caches, stored locally.</li>
+  <li>Encryption keys, held in the platform keystore/keychain.</li>
+  <li>Contact names, if you enable address-book matching. Matching happens entirely on the device; your address book is never uploaded.</li>
+  <li>Notifications are decrypted on the device.</li>
+</ul>
+<h2>Backups</h2>
+<p>Sennit can write your history to a single <code>.sennit</code> file. That file is <strong>created on your device, encrypted on your device, and never uploaded</strong>. There is no Sennit cloud to upload it to.</p>
+<ul>
+  <li>The file is encrypted with a passphrase you choose, using Argon2id and XChaCha20-Poly1305. The passphrase is not stored anywhere and is not recoverable — if you lose it, nobody can open the backup, including us.</li>
+  <li>Where the file goes is entirely your choice: the system save dialog on desktop, the share sheet on mobile. If you put it somewhere that syncs to a cloud drive, that is your decision and that provider's terms apply to the encrypted file.</li>
+  <li>A backup deliberately <strong>excludes your encryption keys, your sign-in token and your bridge credentials</strong>. Restoring history is not the same as signing in, and a file that could do both would be an account takeover in an attachment.</li>
+  <li>Restoring reads only the file you pick. Nothing is contacted, and nothing is written until you have seen what the file contains.</li>
+</ul>
+<h2>Permissions</h2>
+<p>Sennit asks for permissions only when a feature needs them: microphone for voice messages and calls, camera for photos and QR device verification, contacts for local name matching, location only when you explicitly share it into a chat, and notifications. Denying a permission disables only the feature that wanted it.</p>
+<h2>Your rights</h2>
+<p>Your data lives on your homeserver and your device. Deleting the app removes its local data; your homeserver's data is managed through your homeserver. There is nothing held by the developer to request, export, or delete.</p>
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published in this repository with the app's release notes. Questions: <strong><a href="mailto:eric@bostrot.com">eric@bostrot.com</a></strong>.</p>
+</main>
+</body>
+</html>
