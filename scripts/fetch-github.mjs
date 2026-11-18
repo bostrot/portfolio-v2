@@ -48,7 +48,7 @@ const profile = await gh(`https://api.github.com/users/${USER}`);
 const allRepos = await fetchAllRepos();
 
 // Release stats for the featured projects: total asset downloads + latest tag.
-const FEATURED = ['wsl2-distro-manager', 'telegram-support-bot', 'PowerToysRunPluginWinget'];
+const FEATURED = ['wslmanager', 'telegram-support-bot', 'PowerToysRunPluginWinget'];
 const releases = {};
 for (const repo of FEATURED) {
   const rels = await gh(

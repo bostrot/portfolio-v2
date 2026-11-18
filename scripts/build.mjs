@@ -150,7 +150,7 @@ const totalDownloadsK = `${Math.floor(totalDownloads / 1000)}k`;
 const subContent = (s) =>
   s
     .replaceAll('{{TOTAL_STARS}}', fmt(Number(`${Math.floor(github.totals.stars / 100) * 100}`)))
-    .replaceAll('{{WSL_DOWNLOADS}}', fmt(Math.floor((github.releases?.['wsl2-distro-manager']?.downloads ?? 0) / 1000) * 1000));
+    .replaceAll('{{WSL_DOWNLOADS}}', fmt(Math.floor((github.releases?.['wslmanager']?.downloads ?? 0) / 1000) * 1000));
 
 const experienceHtml = experience.entries
   .map(

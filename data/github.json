@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-18T05:20:38.680Z",
+  "fetchedAt": "2026-11-18T19:19:57.806Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 69
   },
   "totals": {
-    "stars": 5159,
+    "stars": 5161,
     "forks": 460,
     "repos": 44,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 184004
+    "releaseDownloads": 184383
   },
   "releases": {
-    "wsl2-distro-manager": {
+    "wslmanager": {
       "count": 74,
-      "downloads": 171615,
+      "downloads": 171994,
       "latestTag": "v2.6.0",
       "latestAt": "2026-11-17"
     },
@@ -41,7 +41,7 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4063,
+      "stars": 4064,
       "forks": 183,
       "language": "Dart",
       "topics": [
@@ -272,6 +272,17 @@
       "pushedAt": "2021-11-23T00:16:03Z"
     },
     {
+      "name": "mautrix-mattermost",
+      "description": null,
+      "url": "https://github.com/bostrot/mautrix-mattermost",
+      "homepage": null,
+      "stars": 2,
+      "forks": 2,
+      "language": "Go",
+      "topics": [],
+      "pushedAt": "2026-11-16T17:20:54Z"
+    },
+    {
       "name": "flutter_applovin",
       "description": "A flutter plugin for applovin",
       "url": "https://github.com/bostrot/flutter_applovin",
@@ -292,17 +303,6 @@
       "language": "Dockerfile",
       "topics": [],
       "pushedAt": "2019-09-12T12:48:36Z"
-    },
-    {
-      "name": "mautrix-mattermost",
-      "description": null,
-      "url": "https://github.com/bostrot/mautrix-mattermost",
-      "homepage": null,
-      "stars": 1,
-      "forks": 2,
-      "language": "Go",
-      "topics": [],
-      "pushedAt": "2026-11-16T17:20:54Z"
     },
     {
       "name": "wahlapp",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-11-17T05:20:52Z"
+      "pushedAt": "2026-11-18T05:21:02Z"
     },
     {
       "name": "bostrot.pro",
@@ -475,7 +475,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-11-17T05:20:18Z"
+      "pushedAt": "2026-11-18T05:20:40Z"
     },
     {
       "name": "ResilioBridge",
@@ -503,12 +503,12 @@
       "name": "sennit",
       "description": "Every conversation, one thread. Self-hosted unified messenger for Matrix + mautrix bridges.",
       "url": "https://github.com/bostrot/sennit",
-      "homepage": null,
+      "homepage": "https://erictrenkel.com/apps/sennit/",
       "stars": 0,
       "forks": 0,
       "language": "Dart",
       "topics": [],
-      "pushedAt": "2026-11-18T02:07:40Z"
+      "pushedAt": "2026-11-18T19:18:01Z"
     },
     {
       "name": "senpaiclub",

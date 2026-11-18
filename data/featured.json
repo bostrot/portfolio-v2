@@ -2,7 +2,7 @@
   "comment": "Curated blurbs for the featured project cards. Live numbers (stars, forks, language) are merged in from data/github.json at build time by scripts/build.mjs.",
   "projects": [
     {
-      "repo": "wsl2-distro-manager",
+      "repo": "wslmanager",
       "title": "WSL Manager",
       "blurb": "A Flutter/Dart GUI for managing WSL2 environments. 62+ releases shipped through the Microsoft Store, Winget, Scoop and Chocolatey, backed by a GitHub Actions CI/CD pipeline and localized into 9 languages. Includes a built-in MCP server exposing WSL environments to AI agents such as Claude Desktop, remote management over SSH, and running Docker images as WSL instances without a Docker installation.",
       "tags": ["Flutter", "Dart", "MCP", "CI/CD", "Microsoft Store"],
