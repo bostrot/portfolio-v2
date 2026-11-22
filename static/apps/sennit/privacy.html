@@ -18,10 +18,32 @@ code{font-size:.9em} ul{padding-left:1.3rem}
 <body>
 <main>
 <h1>Sennit Privacy Policy</h1>
-<p><em>Effective: 16 November 2026</em></p>
-<p>Sennit is a self-hosted messenger. It is designed so that the developer of Sennit <strong>cannot</strong> see your data — there is no Sennit cloud, no account with us, and no telemetry.</p>
-<h2>What Sennit collects</h2>
-<p>Nothing. The app contains no analytics, no crash reporting service, no advertising SDKs, and no tracking of any kind. The developer operates no server that your messages or contacts ever reach. The one exception, licence checks in builds downloaded outside the app stores, is described under <em>Sennit Pro</em> below.</p>
+<p><em>Effective: 22 November 2026</em></p>
+<p>Sennit is a messenger for Matrix and the networks bridged into it. The app has no analytics, no crash reporting, no advertising and no tracking. What the developer can see depends on <strong>which server you use</strong>:</p>
+<ul>
+  <li><strong>Your own Matrix server, or one run by someone else:</strong> the developer receives nothing. Everything goes to the server you chose, and its operator's policy applies.</li>
+  <li><strong>Our public server, matrix.aachen.dev</strong> (the default on the sign-in screen), and the bridges we run next to it: we operate that server, so the data in the next section is stored on our infrastructure.</li>
+</ul>
+<h2>Controller</h2>
+<p>Bostrot Inh. Eric Trenkel, Kölner Str. 71, 50259 Pulheim, Germany — <a href="mailto:eric@bostrot.com">eric@bostrot.com</a> (see the <a href="/imprint.html">imprint</a>).</p>
+<h2>Our public server (matrix.aachen.dev) and its bridges</h2>
+<p>Signing up asks only for a username and a password; no email address or phone number. If you create an account on matrix.aachen.dev, or connect WhatsApp, Signal, Telegram, Google Messages, Discord, Instagram or Messenger through our bridges, we store and process:</p>
+<ul>
+  <li><strong>Your account:</strong> your Matrix ID, display name, profile picture and a hash of your password, and for each signed-in device its name and last-seen IP address.</li>
+  <li><strong>Your conversations:</strong> messages, photos, videos, voice messages, files, reactions and locations you share. In end-to-end encrypted Matrix rooms the server stores only encrypted content it cannot read. <strong>Bridged chats are not end-to-end encrypted on our side.</strong> To relay a message between Matrix and the other network, the bridge has to read it, so we technically have access to the content of bridged chats.</li>
+  <li><strong>Your connected networks:</strong> the phone number or account you connected, the login session the bridge keeps for it (for Instagram and Messenger, the session cookies from the sign-in page you completed in the app), and the contacts and group members of that network, as the bridge imports them.</li>
+  <li><strong>Link previews:</strong> the server fetches links to build previews (by default in chats that are not end-to-end encrypted; in encrypted chats only if you turn it on in Settings → Link previews; you can switch previews off entirely), so it learns which links are previewed. The linked site sees the server, not your device.</li>
+  <li><strong>Technical logs:</strong> IP addresses and request logs of the server and its proxies. They are used only to run and secure the service, are rotated by size and overwritten automatically, typically within days to a few weeks.</li>
+</ul>
+<p>We keep your account and messages until you delete them or your account. We use this data <strong>only to provide the service</strong>: delivering your messages, keeping your history and running the bridges (Art. 6(1)(b) GDPR), and keeping the service secure and backed up (Art. 6(1)(f) GDPR). We do not sell it, do not use it for advertising or profiling, and do not share it with anyone except:</p>
+<ul>
+  <li>the <strong>networks you connect</strong>, which receive the messages you send to them, as they would from their own apps (their privacy policies apply to what they hold);</li>
+  <li>our <strong>service providers</strong>, who process data only on our behalf: <strong>Cloudflare, Inc.</strong>, through whose network all traffic to the server passes (reverse proxy and DDoS protection; it decrypts connections in transit and keeps its own connection logs), and <strong>Hetzner Online GmbH</strong>, which stores our encrypted backups;</li>
+  <li><strong>authorities</strong>, where we are legally required to.</li>
+</ul>
+<p><strong>Where it is hosted.</strong> The server runs on our own hardware in Germany and is reached through Cloudflare. Backups are encrypted on our side before upload (AES-256) and stored with Hetzner in Falkenstein, Germany. A backup can be up to about 12 months old before it is deleted, so deleted data can remain in backups until then.</p>
+<h2 id="delete-account">Deleting your account</h2>
+<p>Email <strong><a href="mailto:eric@bostrot.com?subject=Delete%20my%20Sennit%20account">eric@bostrot.com</a></strong> with your Matrix ID (for example <code>@name:matrix.aachen.dev</code>); we may ask you to confirm the request from inside your account. We then deactivate the account, erase its profile and messages from our server and log out its bridges, usually within 30 days. Deletion from inside Sennit (Settings → Account) is coming in an update. Messages already delivered to other people, or to a connected network, stay with them. See also <a href="delete-account.html">Delete your Sennit account</a>.</p>
 <h2>Sennit Pro</h2>
 <p>Sennit Pro is an optional one-time purchase.</p>
 <ul>
@@ -29,11 +51,12 @@ code{font-size:.9em} ul{padding-left:1.3rem}
   <li><strong>Builds downloaded from the project's release page:</strong> you buy a licence key through Stripe. Stripe processes the payment, and the developer keeps your email address and licence key to deliver and support the licence. When you enter the key, the app sends <strong>the key and nothing else</strong> — no device id, account or app data — to the developer's licence service to check that it is valid.</li>
 </ul>
 <h2>Where your data goes</h2>
-<p>Sennit talks exclusively to servers <strong>you</strong> configure:</p>
+<p>Sennit talks to:</p>
 <ul>
-  <li><strong>Your Matrix homeserver.</strong> Messages, media, contacts and encryption keys sync with the homeserver you sign in to. That server is operated by you or by whoever you chose — its privacy practices are its operator's.</li>
-  <li><strong>Bridges you install</strong> on your own infrastructure relay messages to third-party networks (for example WhatsApp or Telegram). Those networks see what any client on them sees; the bridge runs under your control.</li>
-  <li><strong>Optional AI endpoints.</strong> Voice transcription, semantic search embeddings, reply suggestions and auto-reply only run if you configure an endpoint for them. On-device models never send audio or text anywhere. If you point Sennit at a remote endpoint, the content you asked it to process is sent to that endpoint — which, again, you chose and control.</li>
+  <li><strong>The Matrix homeserver you sign in to:</strong> ours (above) or one you chose. Messages, media, contacts and encryption keys sync with it.</li>
+  <li><strong>The bridges on that server.</strong> On ours, they run as described above. If you run your own, they run under your control. The networks they connect to see what any client on them sees.</li>
+  <li><strong>A push gateway, only if you set one.</strong> None is set by default, and we do not run one. Pushes carry only event and room IDs, never message text.</li>
+  <li><strong>Optional AI endpoints.</strong> Voice transcription, semantic search embeddings, reply suggestions, quick messages and auto-reply only run if you configure an endpoint for them. A quick message sends the last twelve messages of the chat you picked it in, only when you pick it, and its draft lands in the composer — nothing is sent to the chat until you do. On-device models never send audio or text anywhere. If you point Sennit at a remote endpoint, the content you asked it to process is sent to that endpoint — which, again, you chose and control.</li>
 </ul>
 <h2>Auto-reply</h2>
 <p>Sennit can answer messages for you, using the same model endpoint you configured above and no other. Nothing about this feature reaches the developer, and there is no service in the middle.</p>
@@ -71,11 +94,11 @@ code{font-size:.9em} ul{padding-left:1.3rem}
   <li>Restoring reads only the file you pick. Nothing is contacted, and nothing is written until you have seen what the file contains.</li>
 </ul>
 <h2>Permissions</h2>
-<p>Sennit asks for permissions only when a feature needs them: microphone for voice messages and calls, camera for photos and QR device verification, contacts for local name matching, location only when you explicitly share it into a chat, notifications, and — on Android, only if you make Sennit your default messaging app — SMS. Denying a permission disables only the feature that wanted it.</p>
+<p>Sennit asks for permissions only when a feature needs them: microphone for voice messages and calls, camera for photos and QR device verification, contacts for local name matching, location only when you explicitly share it into a chat (it is then stored like any other message on the server you use), notifications, and — on Android, only if you make Sennit your default messaging app — SMS. Denying a permission disables only the feature that wanted it.</p>
 <h2>Your rights</h2>
-<p>Your data lives on your homeserver and your device. Deleting the app removes its local data; your homeserver's data is managed through your homeserver. There is nothing held by the developer to request, export, or delete.</p>
+<p>If you use our server, you can ask for access to your data, a copy of it, its correction or deletion, and you can object to its processing, at <strong><a href="mailto:eric@bostrot.com">eric@bostrot.com</a></strong>. You can also complain to a data protection authority, for example the one for North Rhine-Westphalia (LDI NRW). If you use another server, contact its operator; we hold nothing about you. Deleting the app removes its local data from your device.</p>
 <h2>Changes and contact</h2>
-<p>Changes to this policy are published in this repository with the app's release notes. Questions: <strong><a href="mailto:eric@bostrot.com">eric@bostrot.com</a></strong>.</p>
+<p>Changes to this policy are published here with the app's release notes. Questions: <strong><a href="mailto:eric@bostrot.com">eric@bostrot.com</a></strong>.</p>
 </main>
 </body>
 </html>
