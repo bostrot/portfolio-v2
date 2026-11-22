@@ -18,15 +18,27 @@ code{font-size:.9em} ul{padding-left:1.3rem}
 <body>
 <main>
 <h1>Delete your Sennit account</h1>
-<p>This page is for accounts on <strong>matrix.aachen.dev</strong>, the public server we run for Sennit (Bostrot Inh. Eric Trenkel). If your account is on another Matrix server, ask that server's operator.</p>
-<h2>How to request deletion</h2>
+<p>You can delete your account in the app yourself, or ask us to delete it. Requests by email are for accounts on <strong>matrix.aachen.dev</strong>, the public server we run for Sennit (Bostrot Inh. Eric Trenkel); if your account is on another Matrix server, delete it in the app or ask that server's operator.</p>
+<h2 id="in-app">Delete it in the app</h2>
+<ol>
+  <li>Open Sennit (version 1.0.21 or later) and go to <strong>Settings → Account → Delete account</strong>.</li>
+  <li>Read what will happen, type your username to confirm and tap <strong>Delete account</strong>.</li>
+  <li>Confirm it is you: enter your password, or finish your server's single sign-on page in the browser.</li>
+</ol>
+<p>Sennit then:</p>
+<ul>
+  <li>signs out every bridge you connected (WhatsApp, Signal, Telegram, Messenger, Instagram and the others), so their sessions on the server end;</li>
+  <li>asks your server to deactivate the account permanently and erase what it can: your profile, your account data, and your messages for anyone who had not already received them. The account can no longer sign in, and its Matrix ID cannot be registered again;</li>
+  <li>deletes everything it stored on your device and returns to the welcome screen.</li>
+</ul>
+<p>This works for accounts on any Matrix server; what the server erases is up to that server. A Sennit Pro purchase belongs to your App Store or Google Play account, or to your licence key, and is not cancelled or refunded by deleting the account.</p>
+<h2 id="request">Ask us to delete it</h2>
 <ol>
   <li>Email <strong><a href="mailto:eric@bostrot.com?subject=Delete%20my%20Sennit%20account">eric@bostrot.com</a></strong> with the subject "Delete my Sennit account".</li>
   <li>Include your Matrix ID, for example <code>@name:matrix.aachen.dev</code>.</li>
-  <li>We may ask you to confirm the request from inside your account, so nobody else can delete it.</li>
+  <li>Accounts on matrix.aachen.dev have no email address, so before deleting we ask you to show the account is yours, by confirming the request from inside the account, so nobody else can have it deleted.</li>
 </ol>
-<p>Deleting your account from inside Sennit (Settings → Account) is coming in an app update; this page will say so when it ships.</p>
-<h2>What is deleted</h2>
+<h2>What is deleted on request</h2>
 <ul>
   <li>Your account is deactivated and its Matrix ID can no longer sign in.</li>
   <li>Your profile (display name, picture), devices, and the messages and media you sent are erased from our server.</li>
