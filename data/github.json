@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T05:20:05.932Z",
+  "fetchedAt": "2026-11-23T05:22:30.535Z",
   "profile": {
     "name": "Eric Trenkel",
     "login": "bostrot",
@@ -9,16 +9,16 @@
     "publicRepos": 69
   },
   "totals": {
-    "stars": 5163,
-    "forks": 461,
+    "stars": 5165,
+    "forks": 462,
     "repos": 44,
     "firstRepoCreatedAt": "2016-02-03T09:31:29Z",
-    "releaseDownloads": 186393
+    "releaseDownloads": 186770
   },
   "releases": {
     "wslmanager": {
       "count": 75,
-      "downloads": 173995,
+      "downloads": 174368,
       "latestTag": "v2.6.1",
       "latestAt": "2026-11-19"
     },
@@ -30,7 +30,7 @@
     },
     "PowerToysRunPluginWinget": {
       "count": 9,
-      "downloads": 12398,
+      "downloads": 12402,
       "latestTag": "v1.3.0",
       "latestAt": "2024-05-30"
     }
@@ -41,8 +41,8 @@
       "description": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move and configure distros without CLI flags; AI assistant with tools, MCP server for agents, remote WSL over SSH.",
       "url": "https://github.com/bostrot/wslmanager",
       "homepage": "https://wslmanager.com",
-      "stars": 4067,
-      "forks": 184,
+      "stars": 4069,
+      "forks": 185,
       "language": "Dart",
       "topics": [
         "ai",
@@ -63,7 +63,7 @@
         "wsl",
         "wsl2"
       ],
-      "pushedAt": "2026-11-20T05:02:49Z"
+      "pushedAt": "2026-11-23T05:13:28Z"
     },
     {
       "name": "telegram-support-bot",
@@ -85,7 +85,7 @@
         "ticketing",
         "ticketing-system"
       ],
-      "pushedAt": "2026-11-20T04:57:12Z"
+      "pushedAt": "2026-11-23T03:03:17Z"
     },
     {
       "name": "PowerToysRunPluginWinget",
@@ -104,7 +104,7 @@
         "winget-cli",
         "wingetui"
       ],
-      "pushedAt": "2026-11-22T00:54:48Z"
+      "pushedAt": "2026-11-23T00:56:17Z"
     },
     {
       "name": "flutter_android_pip",
@@ -280,7 +280,7 @@
       "forks": 2,
       "language": "Go",
       "topics": [],
-      "pushedAt": "2026-11-19T19:01:10Z"
+      "pushedAt": "2026-11-22T13:00:10Z"
     },
     {
       "name": "flutter_applovin",
@@ -354,7 +354,7 @@
       "forks": 0,
       "language": null,
       "topics": [],
-      "pushedAt": "2026-11-21T05:21:20Z"
+      "pushedAt": "2026-11-22T08:58:05Z"
     },
     {
       "name": "bostrot.pro",
@@ -475,7 +475,7 @@
       "forks": 0,
       "language": "HTML",
       "topics": [],
-      "pushedAt": "2026-11-21T05:20:18Z"
+      "pushedAt": "2026-11-22T08:57:35Z"
     },
     {
       "name": "ResilioBridge",
@@ -508,7 +508,7 @@
       "forks": 0,
       "language": "Dart",
       "topics": [],
-      "pushedAt": "2026-11-21T21:59:13Z"
+      "pushedAt": "2026-11-23T02:29:02Z"
     },
     {
       "name": "senpaiclub",
