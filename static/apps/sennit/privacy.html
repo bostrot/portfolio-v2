@@ -18,10 +18,10 @@ code{font-size:.9em} ul{padding-left:1.3rem}
 <body>
 <main>
 <h1>Sennit Privacy Policy</h1>
-<p><em>Effective: 22 November 2026</em></p>
-<p>Sennit is a messenger for Matrix and the networks bridged into it. The app has no analytics, no crash reporting, no advertising and no tracking. What the developer can see depends on <strong>which server you use</strong>:</p>
+<p><em>Effective: 26 November 2026</em></p>
+<p>Sennit is a messenger for Matrix and the networks bridged into it. The app has no crash reporting, no advertising and no tracking, and sends anonymous usage statistics <a href="#analytics">only if you opt in</a>. What the developer can see depends on <strong>which server you use</strong>:</p>
 <ul>
-  <li><strong>Your own Matrix server, or one run by someone else:</strong> the developer receives nothing. Everything goes to the server you chose, and its operator's policy applies.</li>
+  <li><strong>Your own Matrix server, or one run by someone else:</strong> the developer receives nothing (apart from anonymous usage statistics, if you opt in). Everything goes to the server you chose, and its operator's policy applies.</li>
   <li><strong>Our public server, matrix.aachen.dev</strong> (the default on the sign-in screen), and the bridges we run next to it: we operate that server, so the data in the next section is stored on our infrastructure.</li>
 </ul>
 <h2>Controller</h2>
@@ -44,6 +44,16 @@ code{font-size:.9em} ul{padding-left:1.3rem}
 <p><strong>Where it is hosted.</strong> The server runs on our own hardware in Germany and is reached through Cloudflare. Backups are encrypted on our side before upload (AES-256) and stored with Hetzner in Falkenstein, Germany. A backup can be up to about 12 months old before it is deleted, so deleted data can remain in backups until then.</p>
 <h2 id="delete-account">Deleting your account</h2>
 <p>Email <strong><a href="mailto:eric@bostrot.com?subject=Delete%20my%20Sennit%20account">eric@bostrot.com</a></strong> with your Matrix ID (for example <code>@name:matrix.aachen.dev</code>); we may ask you to confirm the request from inside your account. We then deactivate the account, erase its profile and messages from our server and log out its bridges, usually within 30 days. You can also delete the account yourself in Sennit 1.0.21 or later under Settings → Account → Delete account, which logs out its bridges, deactivates it and asks the server to erase it. Messages already delivered to other people, or to a connected network, stay with them. See also <a href="delete-account.html">Delete your Sennit account</a>.</p>
+<h2 id="analytics">Anonymous usage statistics (opt-in)</h2>
+<p>Sennit uses <strong>Plausible Analytics</strong>, a privacy-friendly, cookie-free analytics tool, <strong>only if you opt in</strong>. It is off until you say yes: the app asks once, after sign-in, and sends nothing before you answer.</p>
+<ul>
+  <li><strong>What is sent:</strong> the screens you open, named after the screen (for example <code>/settings</code> or <code>/chat</code>, never which chat), and a few feature events: a messenger connected (which network), an AI feature used (translate, quick message or transcription), device sync switched on, and Sennit Pro bought (store or licence key). Every event carries the app version, the platform and the screen width. From the request, Plausible derives the country and the browser or operating system; it does not store the IP address.</li>
+  <li><strong>What is never sent:</strong> personal data, message content, contacts, names, Matrix IDs, room IDs or anything you type. There are no cookies and no identifier that follows you across apps, websites or devices.</li>
+  <li><strong>Where it goes:</strong> Plausible Community Edition, self-hosted by us at analytics.bostrot.com on our own server in Germany and reached through Cloudflare (see above). The statistics are not shared with anyone and not used for advertising.</li>
+  <li><strong>Legal basis:</strong> your consent, Art. 6(1)(a) GDPR.</li>
+  <li><strong>Withdrawing:</strong> switch off Settings → Privacy &amp; security → <em>Share anonymous usage statistics</em> at any time; it takes effect immediately and does not affect what was sent before. If you use device sync, the setting applies to your other devices too. In Sennit Web, a browser set to send “Do Not Track” or Global Privacy Control sends nothing, whatever the setting says.</li>
+  <li><strong>Retention:</strong> Plausible counts unique users with a hash that changes every day; the daily salt is deleted after 24 hours, so a visit cannot be linked to an earlier day. What remains are aggregated statistics without any identifier, which we keep for as long as they are useful to us.</li>
+</ul>
 <h2>Sennit Pro</h2>
 <p>Sennit Pro is an optional one-time purchase.</p>
 <ul>
